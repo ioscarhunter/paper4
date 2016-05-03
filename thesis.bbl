@@ -1,3 +1,33 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{99}
+
+\bibitem{tow} 
+M. Tavella, R. Leeb, R. Rupp and J. d. R. Mill´an,
+\textit{Towards Natural Non-Invasive Hand Neuroprostheses for Daily Living}. 
+Buenos Aires, Argentina: IEEE EMBS, 2010.
+
+\bibitem{asy} 
+G. D. Johnson,
+\textit{Asynchronous real-time control of a robotic arm using a brain-computer interface}. 
+Norfolk, Virginia, United States: Old Dominion University, 2011. 
+
+\bibitem{vis} 
+K. Takano, T. Komatsu, N. Hata, Y. Nakajima and K. Kansaku,
+\textit{Visual stimuli for the P300 brain–computer interface: A comparison of white/gray and green/blue flicker matrices}. 
+ScienceDirect, 2009.
+
+\bibitem{val} 
+N. A. Badcock,
+\textit{Validation of the Emotiv EPOC EEG gaming system for measuring research quality auditory ERPs}. 
+2013.
+
+\bibitem{onl} 
+ M. Spuler, W. Rosenstiel and M. Bogdan,
+\textit{Online Adaptation of a c-VEP Brain-Computer Interface(BCI) Based on Error-Related Potentials and Unsupervised Learning}. 
+PLoS ONE 7(12): e51077, 2012.
+
+\bibitem{hum} 
+C. S. Herrmann,
+\textit{Human EEG responses to 1–100 Hz flicker: resonance phenomena in visual cortex and their potential correlation to cognitive phenomena}. 
+Exp Brain Re, 2001.
 
 \end{thebibliography}

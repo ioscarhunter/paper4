@@ -52,7 +52,9 @@ Derivatives of the EEG technique include evoked potentials (EP), which involves 
 \newpage
 \subsection{Feature scaling (normalization)}
 
-\hspace{1.5cm} Feature scaling is a method that used to standardize the range of independent variables or features of data. It is known as data normalization and it is generally performed during the data pre-processing step. The calculation is determined the distribution mean and standard deviation for each feature. Next we subtract the mean from each feature. Then we divide the values (mean is already subtracted) of each feature by its standard deviation.\cite{ref10}  
+\hspace{1.5cm} Feature scaling is a method that used to standardize the range of independent variables or features of data. It is known as data normalization and it is generally performed during the data pre-processing step. The calculation is determined the distribution mean and standard deviation for each feature. Next we subtract the mean from each feature. Then we divide the values (mean is already subtracted) of each feature by its standard deviation.\cite{ref10}
+
+\[x' = {x-{\overline{x}} \over {\sigma}}\]
 
 \subsection{Uniform distribution\cite{ref11}}
 
@@ -62,12 +64,14 @@ Derivatives of the EEG technique include evoked potentials (EP), which involves 
 	\includegraphics[scale = 0.8]{chapter3/34.pdf}
 	\caption{An illustrate of uniform distribution}
 \end{figure}
+
+\newpage
 The function f(x) is defined by:
 
 \[f(n) = \left\{ 
 \begin{array}{l l}
-  n/2 & \quad \mbox{if $n$ is even}\\
-  -(n+1)/2 & \quad \mbox{if $n$ is odd}\\ \end{array} \right. \]
+  {1 \over b-a} & \quad \mbox{if $a$ $\leq x$ $\leq b$}\\
+  0 & \quad \mbox{$otherwise$}\\ \end{array} \right. \]
 
 \subsection{10/20 international system}
 \hspace{1.5cm} The 10/20 international system is a recognized method to describe and apply the location of scalp electrodes in the context of EEG test. This system is based on the relationship between the location of an electrode and the underlying area of cerebral cortex. The 10/20 international system refers to the actual distance between adjacent electrodes are either 10 \% or 20 \% of the total front-back or right-left distance of the skull. Each site has letters to identify the lobe and a number to identify the hemisphere location. The letters F stands for frontal lobe, T is temporal lobe, C is central lobe, P is parietal lobe, and the last one is O means occipital lobe. Even numbers refer to electrode positions on the right hemisphere and odd numbers refer to the electrode positions on the left hemisphere.
@@ -77,6 +81,11 @@ The function f(x) is defined by:
 	\includegraphics[scale = 0.4]{chapter3/35.pdf}
 	\caption{International 10-20 locations system}
 \end{figure}
+
+\subsection{Standard deviation(SD)}
+\hspace{1.5cm}Standard deviation is measuring a distribution of the collection of data.if the SD is high,the distribution is high.if the SD is low, the distribution is low.
+
+
 
 \newpage
 \section{Material background}
@@ -106,3 +115,6 @@ The function f(x) is defined by:
 	\includegraphics[scale = 0.6]{chapter3/38.pdf}
 	\caption{Illustrate of Arduino UNO board}
 \end{figure}
+
+
+

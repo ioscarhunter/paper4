@@ -13,6 +13,8 @@
 \hspace{1.5cm} EEG is a technique for studying the electrical activities within the brain using electrodes that attached to the surface of scalp. Wires attach these electrodes to a machine, which records the electrical impulses. The results are either printed out or displayed on a computer screen. Different pattern of electrical impulses can denote various form of epilepsy\cite{ref9}. It is also used to diagnose sleep disorders, coma, encephalopathies, and brain death.\par
 Derivatives of the EEG technique include evoked potentials (EP), which involves averaging the EEG activity time-locked to the presentation of a stimulus of some sort (visual, somatosensory, or auditory). Event-related potentials (ERPs) refers to averaged EEG responses that are time-locked to more complex processing of stimuli.
 
+
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale = 0.5]{chapter3/31.pdf}
@@ -23,6 +25,7 @@ Derivatives of the EEG technique include evoked potentials (EP), which involves 
 \subsection{Event-related potential (ERPs)}
 
 \hspace{1.5cm} Event-related potentials (ERPs) are very small voltages generated in the brain structures in response to specific events or stimuli. They measure brain response that is directed result of a specific sensory, cognitive or motor event. To see the brain's response to a stimulus, the experimenter must conduct many trials (usually in the order of 100 or more) and average the results together, causing random brain activity to be averaged out and the relevant waveform to remain, these stimuli can be visual, auditory, tactile and even olfactory and gustatory.
+
 
 \begin{figure}[h]
 	\centering
@@ -59,6 +62,12 @@ Derivatives of the EEG technique include evoked potentials (EP), which involves 
 	\includegraphics[scale = 0.8]{chapter3/34.pdf}
 	\caption{An illustrate of uniform distribution}
 \end{figure}
+The function f(x) is defined by:
+
+\[f(n) = \left\{ 
+\begin{array}{l l}
+  n/2 & \quad \mbox{if $n$ is even}\\
+  -(n+1)/2 & \quad \mbox{if $n$ is odd}\\ \end{array} \right. \]
 
 \subsection{10/20 international system}
 \hspace{1.5cm} The 10/20 international system is a recognized method to describe and apply the location of scalp electrodes in the context of EEG test. This system is based on the relationship between the location of an electrode and the underlying area of cerebral cortex. The 10/20 international system refers to the actual distance between adjacent electrodes are either 10 \% or 20 \% of the total front-back or right-left distance of the skull. Each site has letters to identify the lobe and a number to identify the hemisphere location. The letters F stands for frontal lobe, T is temporal lobe, C is central lobe, P is parietal lobe, and the last one is O means occipital lobe. Even numbers refer to electrode positions on the right hemisphere and odd numbers refer to the electrode positions on the left hemisphere.
@@ -77,7 +86,7 @@ Derivatives of the EEG technique include evoked potentials (EP), which involves 
 \hspace{1.5cm} The wireless headset Emotiv EPOC research edition, it records EEG data in 14 channel of International 10-20 Locations system with Sequential sampling rate at 128 per second (2048 Hz internal) with resolution 14 bit (16 bit Analog to digital converter, 2-bit instrumental noise floor discarded), the bandwidth is in range 0.2 to 45 Hz with digital notch filters at 50Hz and 60 Hz
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale = 0.01]{chapter3/36.pdf}
+	\includegraphics[scale = 0.09]{chapter3/36.pdf}
 	\caption{Emotive Headset}
 \end{figure}
 
@@ -86,7 +95,7 @@ Derivatives of the EEG technique include evoked potentials (EP), which involves 
 \hspace{1.5cm} The full colour Light-emitting diode (LED) driver which is use for stimulate the subject has a LED light WS2812 model mounted on. It can chain connected with the same model. It can be controlled by a programmed Arduino. The luminous intensity is 550 to 700 mega candela for red, 1100-1400 mcd for green, and 200-400 mcd for blue.
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale = 0.4]{chapter3/37.pdf}
+	\includegraphics[scale = 0.3]{chapter3/37.pdf}
 	\caption{Gravitech Gerora LED base on WS2812}
 \end{figure}
 \subsection{Arduino UNO\cite{ref14}}
@@ -94,6 +103,6 @@ Derivatives of the EEG technique include evoked potentials (EP), which involves 
 \hspace{1.5cm} The Arduino Uno is a microcontroller board based on the ATmega328 that is an open source platform. It has 14 input/output pins6 analog inputs, a 16 MHz quartz crystal, a USB connection, a power jack, an ICSP header and a reset button, The USB connection for upload the software into the Arduino and VCC or supply for connecting the peripheral circuit.   
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale = 0.5]{chapter3/38.pdf}
+	\includegraphics[scale = 0.6]{chapter3/38.pdf}
 	\caption{Illustrate of Arduino UNO board}
 \end{figure}

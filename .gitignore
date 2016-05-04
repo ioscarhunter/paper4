@@ -4,5 +4,9 @@
  *.gz
  *.lot
  *.out
- *.blg
  *.toc
+*.aux
+thesis.lof
+*.lot
+thesis.log
+*.gz

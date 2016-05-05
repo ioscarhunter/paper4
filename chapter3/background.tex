@@ -6,9 +6,7 @@
 \setlength{\parskip}{1em}
 \renewcommand{\baselinestretch}{1.5}
 
-\section{Background knowledge}
-
-\subsection {Electroencephalography (EEG)}
+\section {Electroencephalography (EEG)}
 
 \hspace{1.5cm} EEG is a technique for studying the electrical activities within the brain using electrodes that attached to the surface of the scalp. Wires attach these electrodes to a machine, which records the electrical impulses. The results are either printed out or displayed on a computer screen. A different pattern of electrical impulses can denote the various form of epilepsy\cite{ref9}. It is also used to diagnose sleep disorders, coma, encephalopathies, and brain death.\par
 Derivatives of the EEG technique include evoked potentials (EP), which involves averaging the EEG activity time-locked to the presentation of a stimulus of some sort (visual, somatosensory, or auditory). Event-related potentials (ERPs) refers to averaged EEG responses that are time-locked to more complex processing of stimuli. While Steady state visually evoked potential (SSVEP) refers to stable EEG waveform which has the same or multiple of the frequency of the visual stimulus
@@ -22,7 +20,7 @@ Derivatives of the EEG technique include evoked potentials (EP), which involves 
 \end{figure}
 \newpage
 
-\subsection{Event-related potential (ERPs)}
+\section{Event-related potential (ERPs)}
 
 \hspace{1.5cm} Event-related potentials (ERPs) are very small voltages generated in the brain structures in response to specific events or stimuli. They measure brain response that is directed result of a specific sensory, cognitive or motor event. To see the brain's response to a stimulus, the experimenter must conduct many trials (usually in the order of 100 or more) and average the results together, causing random brain activity to be averaged out and the relevant waveform to remain, these stimuli can be visual, auditory, tactile and even olfactory and gustatory.
 
@@ -34,12 +32,12 @@ Derivatives of the EEG technique include evoked potentials (EP), which involves 
 \end{figure}
 
 \newpage
-\subsection{Steady state visually evoked potential (SSVEP)}
+\section{Steady state visually evoked potential (SSVEP)}
 
 \hspace{1.5cm}  Steady State Visually Evoked Potentials or SSVEPs are EEG signals that are natural responses to visual stimulation. when the subject is in meditation state the brain will generate a stable EEG waveform. But when the subject's retina is stimulated by a visual stimulus which ranging from 3.5 Hz to 75 Hz, the brain generates electrical activity at the same or multiple of the frequency of the visual stimulus.\par
 
 
-\subsection{Cerebral Cortex}
+\section{Cerebral Cortex}
 
 \hspace{1.5cm} The human brain consists of several parts. The part that makes human more intelligent than any animals are Cerebrum. The cerebrum is the largest part of human brain. The physician divides the cerebrum into four parts. There is frontal lobe, parietal lobe, temporal lobe and occipital lobe. The frontal lobe locates at the front of the brain. It controls the creative thought, thinking, problem solving and muscle movements. The parietal lobe locates behind the frontal lobe. It involved in the visual functions, languages, reading and sensory controls. Temporal lobe situates beneath both frontal lobe and parietal lobe. It implicates in control memories, speech and hearing languages. Occipital lobe locates at occipital. it related with a human vision controls. Due to our project study about the human visualization, so we focus on the occipital lobe
 
@@ -50,13 +48,13 @@ Derivatives of the EEG technique include evoked potentials (EP), which involves 
 \end{figure}
 
 \newpage
-\subsection{Feature scaling (normalization)}
+\section{Feature scaling (normalization)}
 
 \hspace{1.5cm} Feature scaling is used to normalize the range of independent variables or features of data to have the properties of a standard normal distribution. to make in some machine learning algorithms work properly. it is usually performed while in the data pre-processing step. The calculation is determined the distribution mean and standard deviation for each feature. Next, we subtract the mean from each feature. Then divide the values which already subtracted by mean, by its standard deviation.\cite{ref10}
 
 \[x' = {x-{\overline{x}} \over {\sigma}}\]
 
-\subsection{Uniform distribution\cite{ref11}}
+\section{Uniform distribution\cite{ref11}}
 
 \hspace{1.5cm} The Uniform or Rectangular distribution has random variable  restricted to a finite interval [a,b] and f(x) has  has constant density over the interval.
 
@@ -74,7 +72,7 @@ The function f(x) is defined by:
   {1 \over b-a} & \quad \mbox{if $a$ $\leq x$ $\leq b$}\\
   0 & \quad \mbox{$otherwise$}\\ \end{array} \right. \]
 
-\subsection{10/20 international system}
+\section{10/20 international system}
 \hspace{1.5cm} The 10/20 international system is a recognized method to describe and apply the location of scalp electrodes in the context of EEG test. This system is based on the relationship between the location of an electrode and the underlying area of cerebral cortex. The 10/20 international system refers to the actual distance between adjacent electrodes are either 10 \% or 20 \% of the total front-back or right-left distance of the skull. Each site has letters to identify the lobe and a number to identify the hemisphere location. The letters F stands for frontal lobe, T is temporal lobe, C is central lobe, P is parietal lobe, and the last one is O means occipital lobe. Even numbers refer to electrode positions on the right hemisphere and odd numbers refer to the electrode positions on the left hemisphere.
 
 \begin{figure}[ht]
@@ -84,10 +82,10 @@ The function f(x) is defined by:
 \end{figure}
 
 \newpage
-\subsection{Standard deviation}
+\section{Standard deviation}
 \hspace{1.5cm} Standard deviation(SD) is measuring a distribution of the collection of data.if the SD is high, the distribution is high. if the SD is low, the distribution is low.
 
-\subsection{Low-pass filter}
+\section{Low-pass filter}
 \hspace{1.5cm}The Low-pass filer only allow the frequency signal that is below  cut-off frequency
 \begin{figure}[ht]
 	\centering
@@ -95,7 +93,7 @@ The function f(x) is defined by:
 	\caption{Low-pass filter}
 \end{figure}
 
-\subsection{High-pass filter}
+\section{High-pass filter}
 \hspace{1.5cm}The High-pass filter only allow the frequency signal that is higher than cut-off frequency
 \begin{figure}[ht]
 	\centering
@@ -103,7 +101,7 @@ The function f(x) is defined by:
 	\caption{High-pass filter}
 \end{figure}
 
-\subsection{Band-pass filter}
+\section{Band-pass filter}
 \hspace{1.5cm}The Band-pass filter only allow the frequency signal that is in the specified range
 \begin{figure}[ht]
 	\centering
@@ -112,23 +110,23 @@ The function f(x) is defined by:
 \end{figure}
 
 \newpage
-\subsection{EEG band}
+\section{EEG band}
 \hspace{1.5cm}EEG band determined as a fixed range of wave frequency and amplitudes over a time scale. In Scientific field classify into 5 types. that are,
 
-\subsubsection{Delta band} the lowest frequency in the range of 0-3 Hz. It occurs during deep sleep
+\subsection{Delta band} the lowest frequency in the range of 0-3 Hz. It occurs during deep sleep
 
-\subsubsection{Theta band} the frequency range between 4-7 Hz. We can investigate the situation of intuitive,creative and imagery. 
+\subsection{Theta band} the frequency range between 4-7 Hz. We can investigate the situation of intuitive,creative and imagery. 
 
-\subsubsection{Alpha band} the frequency range between 8-12 Hz. It occurs during the situation that our mind calm,so we can obtain the strongest EEG brain signal in this frequency range.
+\subsection{Alpha band} the frequency range between 8-12 Hz. It occurs during the situation that our mind calm,so we can obtain the strongest EEG brain signal in this frequency range.
 
-\subsubsection{Beta band} the frequency range between 12-30 Hz. We can investigate this band at the situation of memory and problem-solving.
+\subsection{Beta band} the frequency range between 12-30 Hz. We can investigate this band at the situation of memory and problem-solving.
 
-\subsubsection{Gamma band}the frequency range between 30-100 Hz. This wave may be implicated in creating the unity of conscious perception. 
+\subsection{Gamma band}the frequency range between 30-100 Hz. This wave may be implicated in creating the unity of conscious perception. 
 
-\subsection{Fourier transform}
+\section{Fourier transform}
 The Fourier transform is the mathematical model which uses to transform from the time signal into the frequency domain.
 
-\subsection{Short-time Fourier transform} 
+\section{Short-time Fourier transform} 
 The short-time Fourier transform(STFT) divide a long time signal into shorter groups before computing the Fourier transform on each group.
 
 \newpage

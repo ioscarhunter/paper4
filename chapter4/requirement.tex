@@ -48,46 +48,46 @@ user interface.
 use case" }
 
 \begin{description}
-\item [{Use case:}] Know the EEG-headset status 
-\item [{Actor:}] Admin 
-\item [{Goal:}] To make sure that the Emotiv headset will record EEG with
-the proper signal. 
-\item [{Overview:}] The admin will equip the Emotiv headset on the subject(user)
-head then observes the EEG-headset status to make sure that Emotiv
-headset will record SSVEP with the proper signal for the starting
-program for subject. 
-\item [{Typical course of events:}]~
+	\item {Use case:] Know the EEG-headset status 
+	\item {Actor:] Admin 
+	\item [Goal:] To make sure that the Emotiv headset will record EEG with
+	the proper signal. 
+	\item [Overview:] The admin will equip the Emotiv headset on the subject(user)
+	head then observes the EEG-headset status to make sure that Emotiv
+	headset will record SSVEP with the proper signal for the starting
+	program for subject. 
+	\item [Typical course of events:]~
 
-{
-	\centering
-
-	\begin{tabular}{| m{.47\linewidth} | m{.47\linewidth} |}
-		
-	\hline 
-	\textbf{User} & \textbf{System}  \\
-	\hline 
-	1. Subject asks admin to access the system &   \\
-	\hline 
-	2. Subject is equipped the Emotiv headset by admin  &   \\
-	\hline 
-	& 3. The system returns the EEG-headset status (Green light) to admin \\
-	\hline 
-	4. Admin starts the program for subject & \\
-	\hline 
+	{
+		\centering
 	
-	\end{tabular}
-}
-\item[Alternative:] The system returns poor EEG-headset status (red light) to admin and admin will move the EEG-headset to proper position (status – green light) before admin starts the program 
+		\begin{tabular}{| m{.47\linewidth} | m{.47\linewidth} |}
+			
+		\hline 
+		\textbf{User} & \textbf{System}  \\
+		\hline 
+		1. Subject asks admin to access the system &   \\
+		\hline 
+		2. Subject is equipped the Emotiv headset by admin  &   \\
+		\hline 
+		& 3. The system returns the EEG-headset status (Green light) to admin \\
+		\hline 
+		4. Admin starts the program for subject & \\
+		\hline 
+		
+		\end{tabular}
+	}
+	\item[Alternative:] The system returns poor EEG-headset status (red light) to admin and admin will move the EEG-headset to proper position (status – green light) before admin starts the program 
 
 \end{description}
 \item \textbf{Expanded description of the “See EEG signal in different channel real-time” use case  }
 
 \begin{description}
-	\item [{Use case:}] See peak of frequency domain 
-	\item [{Actor:}] Admin 
-	\item [{Goal:}] To let admin know that the system is in work in progress 
-	\item [{Overview:}] Admin must observe everything which take place in the chamber even the subject’s EEG to make sure that everything works fine.   
-	\item [{Typical course of events:}]~
+	\item [Use case:] See EEG signal in different channel real-time. 
+	\item [Actor:] Admin 
+	\item [Goal:] o observe the abnormal activities of brainwave and subject.  
+	\item [Overview:] Admin must observe everything which take place in the chamber even the subject’s EEG to make sure that everything works fine.   
+	\item [Typical course of events:]~
 	
 	{
 		\centering
@@ -110,8 +110,44 @@ program for subject.
 			
 		\end{tabular}
 	}
+	\item[Alternative:] Admin detects the abnormal magnitude EEG waveform then asks the subject to re-authenticate again.
 	
 \end{description}
+
+\item \textbf{Expanded description of the “See peak of frequency domain” use case}
+
+\begin{description}
+	\item [Use case:] See peak of frequency domain 
+	\item [Actor:] Admin 
+	\item [Goal:] To let admin know that the system is in work in progress 
+	\item [Overview:] Admin must observe everything which take place in the chamber even the subject’s EEG to make sure that everything works fine.   
+	\item [Typical course of events:]~
+	
+	{
+		\centering
+		
+		\begin{tabular}{| m{.47\linewidth} | m{.47\linewidth} |}
+			
+			\hline 
+			\textbf{User} & \textbf{System}  \\
+			\hline 
+			1. Subject asks admin to access the system &   \\
+			\hline 
+			2. Subject is equipped the Emotiv headset by admin  &   \\
+			\hline 
+			3. Subject gazes on the flickers of stimulus & \\
+			\hline 
+			4. Admin observes subject brainwave signal in different channel & \\
+			\hline
+			& 5. The system accepts the EEG of user \\
+			\hline
+			
+		\end{tabular}
+	}
+	\item[Alternative:] Admin detects the abnormal magnitude EEG waveform then asks the subject to re-authenticate again.
+	
+\end{description}
+
 \end{itemize}
 
 \section{Activity Diagram}

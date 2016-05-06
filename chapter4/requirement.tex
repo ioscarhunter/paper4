@@ -110,7 +110,7 @@ use case" }
 			
 		\end{tabular}
 	}
-	\item[Alternative:] Admin detects the abnormal magnitude EEG waveform then asks the subject to re-authenticate again.
+	\item[Alternative:] Admin detects the abnormal magnitude EEG waveform then asks the subject to reequip again.
 	
 \end{description}
 
@@ -120,7 +120,7 @@ use case" }
 	\item [Use case:] See peak of frequency domain 
 	\item [Actor:] Admin 
 	\item [Goal:] To let admin know that the system is in work in progress 
-	\item [Overview:] Admin must observe everything which take place in the chamber even the subject’s EEG to make sure that everything works fine.   
+	\item [Overview:]The system allows the admin to see the peak of the frequency domain to let admin ensure that the system is calculating the subjects feature pattern while recording their SSVEP waveform. 
 	\item [Typical course of events:]~
 	
 	{
@@ -137,10 +137,8 @@ use case" }
 			\hline 
 			3. Subject gazes on the flickers of stimulus & \\
 			\hline 
-			4. Admin observes subject brainwave signal in different channel & \\
-			\hline
-			& 5. The system accepts the EEG of user \\
-			\hline
+			& 4. The system will calculate the feature pattern and show the result of calculation to admin  \\
+			\hline 
 			
 		\end{tabular}
 	}

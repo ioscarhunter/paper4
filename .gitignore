@@ -10,3 +10,7 @@ thesis.lof
 *.lot
 thesis.log
 *.gz
+*.blg
+thesis.toc
+thesis.pdf
+thesis.pdf

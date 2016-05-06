@@ -58,6 +58,11 @@ HELM,
 \textit{The Uniform Distribution,”}. 
 in Workbook Level 1, 2004, p. 2.
 
+\bibitem{ref15}
+M.  Hart,
+\textit{ "The 10-20 system - Marius 't Hart . net"}
+, Mariusthart.net, 2016. [Online]. Available: http://www.mariusthart.net/?e=200. [Accessed: 06- May- 2016].
+
 \bibitem{ref12} 
 Emotiv,
 \textit{“Brain computer interface \& scientific contextual EEG,”}. 
@@ -73,9 +78,6 @@ Worldsemi, Shenzhen.
 Arduino. Available:
 $https://www.arduino.cc/en/Main/ArduinoBoardUno.$
 
-\bibitem{ref15}
-M.  Hart,
-\textit{ "The 10-20 system - Marius 't Hart . net"}
-, Mariusthart.net, 2016. [Online]. Available: http://www.mariusthart.net/?e=200. [Accessed: 06- May- 2016].
+
 
 \end{thebibliography}

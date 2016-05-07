@@ -87,7 +87,7 @@ use case" }
 \begin{description}
 	\item [Use case:] See EEG signal in different channel real-time. 
 	\item [Actor:] Admin 
-	\item [Goal:] o observe the abnormal activities of brainwave and subject.  
+	\item [Goal:] to observe the abnormal activities of brainwave and subject.  
 	\item [Overview:] Admin must observe everything which take place in the chamber even the subject’s EEG to make sure that everything works fine.   
 	\item [Typical course of events:]~
 	
@@ -117,7 +117,6 @@ use case" }
 \end{description}
 
 \item \textbf{Expanded description of the "See peak of frequency domain" use case}
-
 \begin{description}
 	\item [Use case:] See peak of frequency domain 
 	\item [Actor:] Admin 
@@ -149,9 +148,44 @@ use case" }
 	
 \end{description}
 
+\item \textbf{Expanded description of the "Resting state" use case }
+\begin{description}
+	\item [Previous cases:] -
+	\item [Use case:] Resting state
+	\item [Actor:] User  
+	\item [Goal:] To obtain the EEG of user in general state. 
+	\item [Overview:] This is a step that every user must pass this step to control the program in next step. The EEG of the user that be obtained in this step we use it like a baseline. 
+	\item [Typical course of events:]~
+	
+	{
+		\centering
+		
+		\begin{tabular}{| m{.47\linewidth} | m{.47\linewidth} |}
+			
+			\hline 
+			\textbf{User} & \textbf{System}  \\
+			\hline 
+			1. Subject asks admin to access the system. &   \\
+			\hline 
+			2. Subject is equipped the Emotive headset bu admin   &   \\
+			\hline 
+			& 3. The System will show the status of Emotiv headset \\
+			\hline 
+			4. Admins will tell Subject about Emotiv's status is good &  \\
+			\hline
+			5. Subject gazes on the flickers of stimulus &  \\
+			\hline
+			& 6. The system will obtain the EEG of subject to use in next step\\
+			\hline
+			
+		\end{tabular}
+	}
+	
+\end{description}
+
 \item \textbf{Expanded description of the "Select the menu program" use case }
 \begin{description}
-	\item [Previous cases:] Register
+	\item [Previous cases:] Resting state
 	\item [Use case:] Select the menu program
 	\item [Actor:] User  
 	\item [Goal:] To be granted select the menu program from the system. 
@@ -184,7 +218,9 @@ use case" }
 	
 \end{description}
 
+
 \end{itemize}
+
 
 \section{Activity Diagram}
 

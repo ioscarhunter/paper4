@@ -54,6 +54,8 @@ Derivatives of the EEG technique include evoked potentials (EP), which involves 
 
 \[x' = {x-{\overline{x}} \over {\sigma}}\]
 
+where $x'$ is the original feature vector,$\overline{x}$ is the mean of the feature vector,$\sigma$ and is its standard deviation.
+
 \section{Uniform distribution\cite{ref11}}
 
 \hspace{1.5cm} The Uniform or Rectangular distribution has random variable  restricted to a finite interval [a,b] and f(x) has  has constant density over the interval.
@@ -147,6 +149,46 @@ The short-time Fourier transform(STFT) divide a long time signal into shorter gr
 	\includegraphics[scale = 0.5]{chapter3/emotiv_electrodes_cover.pdf}
 	\caption{Emotive coverage in 10-20 system, green is channel provide, black is ground}
 \end{figure}
+
+\newpage
+\begin{table}[ht]
+\centering
+\begin{tabular}{| m{.47\linewidth} | m{.47\linewidth} |}
+			
+			\hline 
+			\textbf{Features} & \textbf{Emotiv EEG neuroheadset}  \\
+			\hline 
+			Number of channels & 14 (plus CMS/DRL references, P3/P4 locations)   \\
+			\hline 
+			Channel names (International 10-20 location)  & AF3,F7,F3, FC5, T7, P7, O1, O2, P8, T8, FC6, F4, F8, AF4  \\
+			\hline 
+			Sampling method & Sequential sampling. Single ADC \\
+			\hline 
+			Sampling rate & 128 samples per second (Hz) (2048 Hz internal) \\
+			\hline
+			Resolution & 14 bits 1 LSB = 0.51 $\mu$V (16 bit ADC, 2 bits instrumental noise floor discarded) \\
+			\hline
+			Band width & 0.2-45 Hz, digital notch filters at 50 Hz and 60 Hz\\
+			\hline
+			Filtering & Built in digital 5th order Sinc filter\\
+            \hline
+			Dynamic range (input referred) & 8400 $\mu$V (pp)\\
+            \hline
+			Coupling mode & Ac coupled\\
+            \hline
+			Connectivity & Proprietary wireless, 2,4 GHz band\\
+            \hline
+			Power & LiPoly \\
+            \hline
+			Battery life (typical) & 12 hours \\
+            \hline
+			Impedance Measurement & Real-time contact quality using patented system \\
+		\end{tabular}
+        
+\caption{Emotiv EPOC features, taken from \textbf{$http://emotiv.com/upload/manual/sdk/$
+$EPOCSpecifications.pdf$}}
+\label{table:1}
+\end{table}
 
 \newpage
 \subsection{Gravitech Gerora LED\cite{ref13}}

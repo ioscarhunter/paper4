@@ -61,11 +61,11 @@ use case" }
 
 	{
 		\centering
-		\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 		\begin{tabular}{| P{.47\linewidth} | P{.47\linewidth} |}
 			
 		\hline 
-		\textbf{User} & \textbf{System}  \\
+		\multicolumn{1}{|c}{\textbf{User}} & 
+  		\multicolumn{1}{|c|}{\textbf{System}}\\
 		\hline 
 		1. Subject asks admin to access the system &   \\
 		\hline 

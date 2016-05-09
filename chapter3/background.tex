@@ -52,7 +52,6 @@ Derivatives of the EEG technique include evoked potentials (EP), which involves 
 	\caption{Cerebral cortex part 1.Frontal lobe, 2.Parietal lobe, 3.Temporal lobe, 4.Occipital lobe}
 \end{figure}
 
-\newpage
 \section{Feature scaling (normalization)}
 
 \hspace{1.5cm} Feature scaling is used to normalize the range of independent variables or features of data to have the properties of a standard normal distribution. to make in some machine learning algorithms work properly. it is usually performed while in the data pre-processing step. The calculation is determined the distribution mean and standard deviation for each feature. Next, we subtract the mean from each feature. Then divide the values which already subtracted by mean, by its standard deviation.\cite{ref10}
@@ -63,6 +62,7 @@ Derivatives of the EEG technique include evoked potentials (EP), which involves 
 
 where $x'$ is the original feature vector,$\overline{x}$ is the mean of the feature vector,$\sigma$ and is its standard deviation.
 
+\newpage
 \section{Uniform distribution\cite{ref11}}
 
 \hspace{1.5cm} The Uniform or Rectangular distribution has random variable  restricted to a finite interval $[a,b]$ and $f(x)$ has  has constant density over the interval.
@@ -82,11 +82,7 @@ f(x) = \left\{
   0 & \quad \mbox{$otherwise$}\\ \end{array} \right.
 \end{equation}
 
-Where:
-\begin{description}
-	\item [$f(x)$] is distribution between a and b
-	\item [$a$ and $b$] is boundary of distribution
-\end{description}
+Where: $f(x)$ is distribution between $a$ and $b$, $a$ and $b$ are boundary of distribution.
 
 \section{10/20 international system}
 \hspace{1.5cm} The 10/20 international system is a recognized method to describe and apply the location of scalp electrodes in the context of EEG test. This system is based on the relationship between the location of an electrode and the underlying area of cerebral cortex. The 10/20 international system refers to the actual distance between adjacent electrodes are either 10 \% or 20 \% of the total front-back or right-left distance of the skull. Each site has letters to identify the lobe and a number to identify the hemisphere location. The letters F stands for frontal lobe, T is temporal lobe, C is central lobe, P is parietal lobe, and the last one is O means occipital lobe. Even numbers refer to electrode positions on the right hemisphere and odd numbers refer to the electrode positions on the left hemisphere.
@@ -104,7 +100,8 @@ Where:
 	 \sigma = \sqrt{\frac{ \sum\limits ^{N}_{i=1} (x_{i} - \bar{x})^2}{N - 1}} 
 \end{equation}
 
-Where:
+Where: $\sigma$ is a sample standard deviation, $\bar{x}$ is mean of the sample,
+	   $x_i$ is the $i^(th)$ me
 \begin{description}
 	\item [$\sigma$] is sample standard deviation
 	\item [$\bar{x}$] is mean of the sample

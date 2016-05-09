@@ -19,7 +19,7 @@ In our project, first we plan how to investigate the EEG data from the subject. 
 \subsection{Visual stimulus (ERP)}
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=\textwidth]{chapter7/frame.png}
+	\includegraphics[width=\textwidth]{chapter7/frame_4.jpg}
 	\caption{Visual Stimulator}
 \end{figure}
 \subsection{Visual stimulus (SSVEP)}
@@ -50,7 +50,7 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 			\hline 
 			Flickering type & Regular & Uniform random   \\
 			\hline 
-			Stimulus & Static & Modular  \\
+			Stimulus & \multicolumn{2}{c}{Modular} \vline\\
 			\hline 
 			Sample Length & \multicolumn{2}{c}{64samples/epoch} \vline\\
 			\hline 
@@ -80,7 +80,29 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 	\caption{Comparison between the result of experiment1 and 2}
 \end{figure}
 
+\begin{table}[ht]
+\centering
+\begin{tabular}{| m{.2\linewidth} | m{.3\linewidth} | m{.2\linewidth} | m {.2\linewidth}}
+			
+			\hline 
+			\multicolumn{1}{|c}{\textbf{Trial}} & 
+  			\multicolumn{1}{|c|}{\textbf{Total time for each trials}}  & 
+            \multicolumn{2}{c}{Accuracy of flickering type} \\
+			\hline 
+			Flickering type & Regular & Uniform random   \\
+			\hline 
+			Stimulus & Static & Modular  \\
+			\hline 
+			Sample Length & \multicolumn{2}{c}{64samples/epoch} \vline\\
+			\hline 
+			Epoch time & \multicolumn{2}{c}{500 ms} \vline\\
+			\hline
+		\end{tabular}       
+\caption{Experiment paradigm}
+\label{table:2}
+\end{table}
 
+\newpage
 \section{Experiment II}
 
 

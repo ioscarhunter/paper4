@@ -78,6 +78,13 @@ Worldsemi, Shenzhen.
 Arduino. Available:
 $https://www.arduino.cc/en/Main/ArduinoBoardUno.$
 
-
+@article{sefelin2003paper,
+title={Paper prototyping-what is it good for?: a comparison of paper-and computer-based low-fidelity prototyping},
+author={Sefelin, Reinhard and Tscheligi, Manfred and Giller, Verena},
+booktitle={CHI'03 extended abstracts on Human factors in computing systems},
+pages={778--779},
+year={2003},
+organization={ACM}
+}
 
 \end{thebibliography}

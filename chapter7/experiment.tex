@@ -29,7 +29,7 @@ In our project, first we plan how to investigate the EEG data from the subject. 
 \subsection{Experiment Paradigm I}
 \begin{itemize}
 \item{\textbf{Subjects}}\newline
-\hspace{3.0cm}In this experiment, we use 4 subjects. There are sun,oscar,win and nil that is the nickname of subjects.
+\hspace{3.0cm}In this experiment, we use 4 subjects. There are SS,OK,WP and NT that is the nickname and firstname of subjects.
 \item{\textbf{Stimulus}}
 For one trial, we use 11, 15, 19, 23 seconds respectively.
 \item{\textbf{Trials}}
@@ -92,25 +92,41 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 \begin{tabular}{| c | c | c | c | c |}
 
 			\hline 
-			\multirow{2}{*}{\textbf{Trial}} & 
-  			\multirow{2}{*}{\textbf{Total time}}  & 
+			\multirow{2}{*}{\textbf{Trial(time)}} & 
+  			\multirow{2}{*}{\textbf{Total time(sec)}}  & 
             \multirow{2}{*}{\textbf{Subject}} &
             \multicolumn{2}{c|}{\textbf{Accuracy of flickering type}} \\
             \cline{4-5}
-            \textbf{(time)}&\textbf{(sec)}&&\multicolumn{1}{c|}{\textbf{Regular}} &\multicolumn{1}{c|}{\textbf{Uniform}}  \\
+            &&&\multicolumn{1}{c|}{\textbf{Regular}} &\multicolumn{1}{c|}{\textbf{Uniform}}  \\
 			\hline 
-			Flickering type & 11  & Uniform random   \\
-			\hline 
-			Stimulus & 15  & Modular  \\
-			\hline 
-			Sample Length & \multicolumn{2}{c}{64samples/epoch} \vline\\
-			\hline 
-			Epoch time & \multicolumn{2}{c}{500 ms} \vline\\
-			\hline
+			\multirow{4}{*}{3}&\multirow{4}{*}{11}&OK&30&60 \\
+			\cline{3-5}
+			&&WT&50&65 \\ \cline{3-5}
+			&&SS&45&50 \\ \cline{3-5}
+			&&NT&35&45 \\
+            \hline
+			\multirow{4}{*}{5}&\multirow{4}{*}{15}&OK&55&75 \\
+			\cline{3-5}
+			&&WT&60&70 \\ \cline{3-5}
+			&&SS&65&70 \\ \cline{3-5}
+			&&NT&60&65 \\
+            \hline
+            \multirow{4}{*}{7}&\multirow{4}{*}{19}&OK&& \\
+			\cline{3-5}
+			&&WT&& \\ \cline{3-5}
+			&&SS&& \\ \cline{3-5}
+			&&NT&& \\
+            \hline 
+            \multirow{4}{*}{9}&\multirow{4}{*}{23}&OK&& \\
+			\cline{3-5}
+			&&WT&& \\ \cline{3-5}
+			&&SS&& \\ \cline{3-5}
+			&&NT&& \\
+            \hline 
 		\end{tabular}       
         }
-\caption{Experiment paradigm}
-\label{table:2}
+\caption{Experiment result}
+\label{table:3}
 \end{table}
 
 \newpage

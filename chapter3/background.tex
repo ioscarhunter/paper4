@@ -82,7 +82,7 @@ f(x) = \left\{
   0 & \quad \mbox{$otherwise$}\\ \end{array} \right.
 \end{equation}
 
-Where: $f(x)$ is distribution between $a$ and $b$, $a$ and $b$ are boundary of distribution.
+Where : $f(x)$ is distribution between $a$ and $b$, $a$ and $b$ are boundary of distribution.
 
 \section{10/20 international system}
 \hspace{1.5cm} The 10/20 international system is a recognized method to describe and apply the location of scalp electrodes in the context of EEG test. This system is based on the relationship between the location of an electrode and the underlying area of cerebral cortex. The 10/20 international system refers to the actual distance between adjacent electrodes are either 10 \% or 20 \% of the total front-back or right-left distance of the skull. Each site has letters to identify the lobe and a number to identify the hemisphere location. The letters F stands for frontal lobe, T is temporal lobe, C is central lobe, P is parietal lobe, and the last one is O means occipital lobe. Even numbers refer to electrode positions on the right hemisphere and odd numbers refer to the electrode positions on the left hemisphere.
@@ -100,15 +100,10 @@ Where: $f(x)$ is distribution between $a$ and $b$, $a$ and $b$ are boundary of d
 	 \sigma = \sqrt{\frac{ \sum\limits ^{N}_{i=1} (x_{i} - \bar{x})^2}{N - 1}} 
 \end{equation}
 
-Where: $\sigma$ is a sample standard deviation, $\bar{x}$ is mean of the sample,
-	   $x_i$ is the $i^(th)$ measurement, 
-\begin{description}
-	\item [$\sigma$] is sample standard deviation
-	\item [$\bar{x}$] is mean of the sample
-	\item [$x_i$] is the $i^{th}$ measurement
-	\item [$N$] is number of sample
-\end{description}
-
+Where : $\sigma$ is a sample standard deviation, $\bar{x}$ is mean of the sample,
+	   $x_i$ is the $i^(th)$ measurement, $N$ is number of sample.
+       
+\newpage
 \section{Low-pass filter}
 \hspace{1.5cm}The Low-pass filer only allow the frequency signal that is below  cut-off frequency
 \begin{figure}[ht]
@@ -133,7 +128,6 @@ Where: $\sigma$ is a sample standard deviation, $\bar{x}$ is mean of the sample,
 	\caption{Band-pass filter}
 \end{figure}
 
-\newpage
 \section{EEG band \cite{eegband}}
 \hspace{1.5cm}EEG band determined as a fixed range of wave frequency and amplitudes over a time scale. In Scientific field classify into 5 types,
 
@@ -184,6 +178,23 @@ From the figure, the first graph is the signal in the time domain that is a peri
 \newpage
 \section{Material background}
 
+\subsection{Gravitech Gerora LED\cite{ref13}}
+
+\hspace{1.5cm} The full-color Light-emitting diode (LED) driver which is use for stimulating the subject has an LED light WS2812 model mounted on. It can chain connected with the same model. It can be controlled by a programmed Arduino. The luminous intensity is 550 to 700 mega candela for red, 1100-1400 mcd for green, and 200-400 mcd for blue.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale = 0.3]{chapter3/37.pdf}
+	\caption{Gravitech Gerora LED base on WS2812}
+\end{figure}
+\subsection{Arduino UNO\cite{ref14}}
+
+\hspace{1.5cm} The Arduino Uno is a microcontroller board based on the ATmega328 that is an open source platform. It has 14 input/output pins6 analog inputs, a 16 MHz quartz crystal, a USB connection, a power jack, an ICSP header and a reset button, The USB connection for upload the software into the Arduino and VCC or supply for connecting the peripheral circuit.   
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale = 0.8]{chapter3/38.pdf}
+	\caption{Illustrate of Arduino UNO board}
+\end{figure}
+
 \subsection{Emotiv EPOC headset\cite{ref12}}
 
 \hspace{1.5cm} The wireless headset Emotiv EPOC research edition, it records EEG data in 14 channel of International 10-20 Locations system with Sequential sampling rate at 128 per second (2048 Hz internal) with resolution 14 bit (16 bit Analog to digital converter, 2-bit instrumental noise floor discarded), the bandwidth is in range 0.2 to 45 Hz with digital notch filters at 50Hz and 60 Hz
@@ -196,11 +207,10 @@ From the figure, the first graph is the signal in the time domain that is a peri
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale = 0.5]{chapter3/emotiv_electrodes_cover.pdf}
+	\includegraphics[scale = 0.4]{chapter3/emotiv_electrodes_cover.pdf}
 	\caption{Emotive coverage in 10-20 system, green is channel provide, black is ground}
 \end{figure}
 
-\newpage
 \begin{table}[ht]
 \centering
 \begin{tabular}{| m{.47\linewidth} | m{.47\linewidth} |}
@@ -241,21 +251,6 @@ $EPOCSpecifications.pdf$}}
 \label{table:1}
 \end{table}
 
-\newpage
-\subsection{Gravitech Gerora LED\cite{ref13}}
 
-\hspace{1.5cm} The full-color Light-emitting diode (LED) driver which is use for stimulating the subject has an LED light WS2812 model mounted on. It can chain connected with the same model. It can be controlled by a programmed Arduino. The luminous intensity is 550 to 700 mega candela for red, 1100-1400 mcd for green, and 200-400 mcd for blue.
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale = 0.3]{chapter3/37.pdf}
-	\caption{Gravitech Gerora LED base on WS2812}
-\end{figure}
-\subsection{Arduino UNO\cite{ref14}}
 
-\hspace{1.5cm} The Arduino Uno is a microcontroller board based on the ATmega328 that is an open source platform. It has 14 input/output pins6 analog inputs, a 16 MHz quartz crystal, a USB connection, a power jack, an ICSP header and a reset button, The USB connection for upload the software into the Arduino and VCC or supply for connecting the peripheral circuit.   
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale = 0.8]{chapter3/38.pdf}
-	\caption{Illustrate of Arduino UNO board}
-\end{figure}
 

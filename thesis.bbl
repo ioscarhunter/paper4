@@ -69,11 +69,6 @@ M.  Hart,
 \textit{ "The 10-20 system - Marius 't Hart . net"}
 , Mariusthart.net, 2016. [Online]. Available: http://www.mariusthart.net/?e=200. [Accessed: 06- May- 2016].
 
-\bibitem{ref12} 
-Emotiv,
-\textit{“Brain computer interface \& scientific contextual EEG,”}. 
-Emotiv, 2014.
-
 \bibitem{ref13} 
 Worldsemi, 
 \textit{“WS2812 Intelligent control LED,”}. 
@@ -83,6 +78,13 @@ Worldsemi, Shenzhen.
 \textit{“Arduino.cc,”}. 
 Arduino. Available:
 $https://www.arduino.cc/en/Main/ArduinoBoardUno.$
+
+\bibitem{ref12} 
+Emotiv,
+\textit{“Brain computer interface \& scientific contextual EEG,”}. 
+Emotiv, 2014.
+
+
 
 
 \end{thebibliography}

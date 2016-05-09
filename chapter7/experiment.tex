@@ -21,9 +21,10 @@ In our project, first we plan how to investigate the EEG data from the subject. 
 \subsection{Visual stimulus (SSVEP)}
 
 \section{Experiment I}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \begin{table}[ht]
 \centering
-\begin{tabular}{| m{.4\linewidth} | m{.4\linewidth} | m{.4\linewidth} |}
+\begin{tabular}{| P{.3\linewidth} | P{.3\linewidth} | P{.3\linewidth} |}
 			
 			\hline 
 			\textbf{Parameter} & \textbf{Experiment1}  & \textbf{Experiment2}\\
@@ -32,9 +33,9 @@ In our project, first we plan how to investigate the EEG data from the subject. 
 			\hline 
 			Stimulus & Static & Modular  \\
 			\hline 
-			Sample Length & 64samples/epoch \\
+			Sample Length & \multicolumn{2}{c}{64samples/epoch} \vline\\
 			\hline 
-			Epoch time & 500 ms \\
+			Epoch time & \multicolumn{2}{c}{500 ms} \vline\\
 			\hline
 		\end{tabular}
         

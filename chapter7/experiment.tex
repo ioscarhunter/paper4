@@ -82,15 +82,16 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 
 \begin{table}[ht]
 \centering
-\begin{tabular}{| m{.1\linewidth} | m{.1\linewidth} | m{.2\linewidth} | m{.2\linewidth} | m{.2\linewidth} |}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{| c | c | c | c | c |}
 
 			\hline 
-			\multirow{2}{*}{\textbf{Trial (time)}} & 
-  			\multirow{2}{*}{\textbf{Total time (sec)}}  & 
+			\multirow{2}{*}{\textbf{Trial}} & 
+  			\multirow{2}{*}{\textbf{Total time}}  & 
             \multirow{2}{*}{\textbf{Subject}} &
             \multicolumn{2}{c|}{\textbf{Accuracy of flickering type}} \\
-            \cline{4-5} 
-            &&&\multicolumn{1}{c|}{Regular} &\multicolumn{1}{c|}{Uniform}  \\
+            \cline{4-5}
+            \textbf{(time)}&\textbf{(sec)}&&\multicolumn{1}{c|}{\textbf{Regular}} &\multicolumn{1}{c|}{\textbf{Uniform}}  \\
 			\hline 
 			Flickering type & 11  & Uniform random   \\
 			\hline 
@@ -101,6 +102,7 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 			Epoch time & \multicolumn{2}{c}{500 ms} \vline\\
 			\hline
 		\end{tabular}       
+        }
 \caption{Experiment paradigm}
 \label{table:2}
 \end{table}

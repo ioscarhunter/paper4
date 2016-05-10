@@ -11,6 +11,9 @@
 \hspace{1.5cm} In our project, first we plan how to investigate the EEG data from the subject. There are 2 categories to investigate the data those are software and hardware. When we know like that we go to study how is it different between software and hardware that use in this project and when we already study in it we know that hardware is better than software and we choose it and We plan to design the hardware to use it in experiment.This is materials that we use in our project.
 
 \subsection{EPOC headset by Emotiv\texttrademark}
+\hspace{1.5cm} The wireless headset Emotiv EPOC research edition, it records EEG data in 14 channel of International 10-20 Locations system with Sequential sampling rate at 128 per second (2048 Hz internal) with resolution 14 bit (16 bit Analog to digital converter, 2-bit instrumental noise floor discarded), the bandwidth is in range 0.2 to 45 Hz with digital notch filters at 50Hz and 60 Hz
+
+We use this equipment in our experiment to obtain the EEG from the subjects and we use EEG that we can obtain from the user to apply in our project.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale = 0.09]{chapter3/36.pdf}
@@ -18,6 +21,9 @@
 \end{figure}
 
 \subsection{Arduino Uno}
+\hspace{1.5cm} The Arduino Uno is a microcontroller board based on the ATmega328 that is an open source platform. It has 14 input/output pins6 analog inputs, a 16 MHz quartz crystal, a USB connection, a power jack, an ICSP header and a reset button, The USB connection for upload the software into the Arduino and VCC or supply for connecting the peripheral circuit.
+
+In our experiment, we use the arduino uno board to control the hardware which we use to stimuli subjects to get the EEG from subjects to apply it in our project.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale = 0.8]{chapter3/38.pdf}
@@ -25,6 +31,9 @@
 \end{figure}
 
 \subsection{Gravitech Gerora WS2812S LED}
+\hspace{1.5cm} The full-color Light-emitting diode (LED) driver which is use for stimulating the subject has an LED light WS2812 model mounted on. It can chain connected with the same model. It can be controlled by a programmed Arduino. The luminous intensity is 550 to 700 mega candela for red, 1100-1400 mcd for green, and 200-400 mcd for blue.
+
+For this hardware, we use it be flickers to blink the LED that in this board. We can control the frequency, intensity and color of LED. This hardware is controlled by the arduino uno board to stimuli subjects to get the EEG to apply in our project.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale = 0.4]{chapter3/37.pdf}
@@ -32,16 +41,20 @@
 \end{figure}
 
 \subsection{Visual stimulus (ERP)}
+As the Figure 7.4 show our prototype visual stimulator. It consist of the arduino board and gravitech gerora WS2812 LED board. This stimulator use to stimuli subjects to get EEG. This stimulator blink the light from LED 1 to LED 4 respectively. This stimulator was used in the Experiment I.
+
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.8\textwidth]{chapter7/frame_4.jpg}
+	\includegraphics[scale=0.2]{chapter7/frame_4.jpg}
 	\caption{Visual Stimulator with four targets used for ERPs}
 \end{figure}
 
+\newpage
 \subsection{Visual stimulus (SSVEP)}
+This visual stimulator was developed based on the previous one. 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.8\textwidth]{chapter7/frame_8.jpg}
+	\includegraphics[scale=0.2]{chapter7/frame_8.jpg}
 	\caption{Visual Stimulator with eight targets used for SSVEP}
 \end{figure}
 
@@ -57,7 +70,7 @@ For one trial, we use 11, 15, 19, 23 seconds respectively.
 We recorded 3, 5, 7, 9 times for each set of parameter.
 \item{\textbf{Environment}}
 In this experiment, we control the light illuminate value at 37 Lux.
-\item{\textbf{Parameters}}\\
+	\item{\textbf{Parameters}}\\
 There are 4 parameters. First is flickering type, stimulus, sample length and epoch time.
 \end{itemize}
 
@@ -142,6 +155,7 @@ In this experiment, we set duty-cycle be 0.7 and intensity to be 50\%. Experimen
 \end{table}
 
 The result of this experiment is shown in Table 7.2 with same set of parameter for each stimulus, sample length, epoch time, duty cycle, intensity and frequency. First from the Table 7.2, we compare between regular and uniform random.In the first row we can see the accuracy of "OK" in uniform random is better than regular and "NT" in the last row we can see the accuracy of uniform random is better than regular too. We found each subject have better accuracy in uniform random than regular of flickering type.We found the other thing that is the trial of the experiment. We will compare between "WP" in second row and "WP" in tenth row.The accuracy of "WP" in tenth row is better than "WP" in second row. The main factor is trial that we use in each experiment. We found that when we use more trials, the accuracy is increased too.
+
 \newpage
 \section{Experiment II}
 

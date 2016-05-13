@@ -104,6 +104,131 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 			\hline 
 			\textbf{Parameter} & \textbf{Experiment1}  & \textbf{Experiment2}\\
 			\hline 
+            Stimulus & \multicolumn{2}{c}{Modular} \vline\\
+			Flickering type & Regular & Uniform random   \\
+			\hline 
+			S & Regular & Uniform random   \\
+			\hline 
+			Sample Length & \multicolumn{2}{c}{64samples/epoch} \vline\\
+			\hline 
+			Epoch time & \multicolumn{2}{c}{500 ms} \vline\\
+			\hline
+		\end{tabular}       
+\caption{Experimental paradigm}
+\label{table:2}
+\end{table}
+
+In this experiment, we set duty-cycle be 0.7 and intensity to be 50\%. Experimental paradigm is shown in Table 7.1. We set the type of stimulus, sample length, epoch time, duty cycle, intensity and frequency to be the same. There are difference in flickering types. For first experiment, we blink regular flickers consecutively from LED1 to LED4, and the second experiment, uniform random is used to random the flickers. We have 3, 5, 7, and 9 trails for each subject to obtain the EEG. When we get the EEG, we take it to find average and accuracy of this experiment.
+
+\newpage
+\subsection{Experiment result I}
+
+\hspace{1.5cm} From the figure 7.6, we obtain the EEG data of flickers line Y1,Y3,Y5 and Y7 for experiment I from trial= 3, subject = "OK". When we receive the EEG data of each flicker (Figure 7.6), we use range of 290-350 millisecond to classify which flicker that the subject fixate. From figure 7.6, we will see the 4 lines of graph. Y1 the EEG data from flicker 1, Y3 is from flicker 2, Y5 is from flicker3, and Y7 is from flicker 4. Each line means that we collect the data of the subject for 3 trials and compute the average of the EEG data that we got in each line. When we have already computed the average, we apply the normalization to all of the data which are averages to compare with each other. In this figure, the flicker that the subject fixate is Y5 or flicker 3.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\textwidth]{chapter7/erp_result.pdf}
+	\caption{EEG data of subject "OK" ,trial = 3 from flickers Y1,Y3,Y5 and Y7}
+\end{figure}
+
+From the figure 7.7, we have a comparison graph of the first experiment EXP1 and the second experiment EXP2. Both are different in flickering types. EXP1's flickering type is regular, whereas EXP2 has a uniform random type. This graph display the accuracy of EXP1 and EXP2, where the trial = 7. The accuracy of EXP1 is equal to 70\% and EXP2 is equal to 80\%. We can see that EXP2 is more accurate than EXP1 in any trails that we use.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\textwidth]{chapter7/result_12.pdf}
+	\caption{Comparison between the result of experiment1 and 2}
+\end{figure}
+
+\begin{table}[ht]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{| c | c | c | c | c |}
+
+			\hline 
+			\multirow{2}{*}{\textbf{Trial}} & 
+  			\multirow{2}{*}{\textbf{Total time [s]}}  & 
+            \multirow{2}{*}{\textbf{Subject}} &
+            \multicolumn{2}{c|}{\textbf{Accuracy of flickering type}} \\
+            \cline{4-5}
+            &&&\multicolumn{1}{c|}{\textbf{Regular}} &\multicolumn{1}{c|}{\textbf{Uniform}}  \\
+			\hline 
+			\multirow{4}{*}{3}&\multirow{4}{*}{11}&OK&30&60 \\
+			\cline{3-5}
+			&&WP&50&65 \\ \cline{3-5}
+			&&SS&45&50 \\ \cline{3-5}
+			&&NT&35&45 \\
+            \hline
+			\multirow{4}{*}{5}&\multirow{4}{*}{15}&OK&55&75 \\
+			\cline{3-5}
+			&&WP&60&70 \\ \cline{3-5}
+			&&SS&65&70 \\ \cline{3-5}
+			&&NT&60&65 \\
+            \hline
+            \multirow{4}{*}{7}&\multirow{4}{*}{19}&OK&70&75 \\
+			\cline{3-5}
+			&&WP&80&80 \\ \cline{3-5}
+			&&SS&65&85 \\ \cline{3-5}
+			&&NT&65&80 \\
+            \hline 
+            \multirow{4}{*}{9}&\multirow{4}{*}{23}&OK&85&85 \\
+			\cline{3-5}
+			&&WP&80&90 \\ \cline{3-5}
+			&&SS&75&80 \\ \cline{3-5}
+			&&NT&80&85 \\
+            \hline 
+		\end{tabular}       
+        }
+\caption{Experiment result}
+\label{table:3}
+\end{table}
+
+The result of this experiment is shown in Table 7.2 with same set of parameter for each stimulus, sample length, epoch time, duty cycle, intensity and frequency. First from the Table 7.2, we compare between regular and uniform random.In the first row we can see the accuracy of "OK" in uniform random is better than regular and "NT" in the last row we can see the accuracy of uniform random is better than regular too. We found each subject have better accuracy in uniform random than regular of flickering type.We found the other thing that is the trial of the experiment. We will compare between "WP" in second row and "WP" in tenth row.The accuracy of "WP" in tenth row is better than "WP" in second row. The main factor is trial that we use in each experiment. We found that when we use more trials, the accuracy is increased too.
+
+\newpage
+\section{Experiment II}
+\subsection{Experimental Paradigm I}
+\begin{itemize}
+\item{\textbf{Subjects}}\newline
+In this experiment, we use 4 subjects. There are SS,OK,WP and NT that is the nickname and firstname of subjects.
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\begin{table}[ht]
+\centering
+\begin{tabular}{| P{.2\linewidth} | P{.2\linewidth} | P{.2\linewidth} |}
+			\hline 
+			\textbf{Subjects} & \textbf{Age}  & \textbf{Sex}\\
+			\hline 
+			SS & 22 & Male\\
+			\hline 
+			OK & 22 & Male\\
+			\hline 
+			WP & 21 & Male\\
+			\hline 
+			NT & 21 & Male\\
+			\hline
+		\end{tabular}       
+\caption{Experimental paradigm}
+\label{table:2}
+\end{table}
+
+\item{\textbf{Stimulus}}
+For one trial, we use 11, 15, 19, 23 seconds respectively.
+\item{\textbf{Trials}}
+We recorded 3, 5, 7, 9 times for each set of parameter.
+\item{\textbf{Environment}}
+In this experiment, we control the light illuminate value at 37 Lux.
+	\item{\textbf{Parameters}}\\
+There are 4 parameters. First is flickering type, stimulus, sample length and epoch time.
+\end{itemize}
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\begin{table}[ht]
+\centering
+\begin{tabular}{| P{.3\linewidth} | P{.3\linewidth} | P{.3\linewidth} |}
+			
+			\hline 
+			\textbf{Parameter} & \textbf{Experiment1}  & \textbf{Experiment2}\\
+			\hline 
 			Flickering type & Regular & Uniform random   \\
 			\hline 
 			Stimulus & \multicolumn{2}{c}{Modular} \vline\\

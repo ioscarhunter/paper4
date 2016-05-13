@@ -104,7 +104,7 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 			\hline 
 			\textbf{Parameter} & \textbf{Experiment1}  & \textbf{Experiment2}\\
 			\hline 
-            Stimulus & Regular & Modulus   \\
+            Stimulus & static & Modular   \\
 			\hline 
             Flickering type & \multicolumn{2}{c}{Regualr} \vline\\
 			\hline 
@@ -117,7 +117,7 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 \label{table:2}
 \end{table}
 
-In this experiment, we set the duty-cycle to be 0.7 and intensity to be 50\%. The experimental paradigm is shown in Table 7.2, we set the flickering type, sample length, epoch time, duty cycle, intensity and frequency to be the same. There are some difference in stimulus. We have 2 experiment of stimulus. First is regular, regular means a flicker will blink 1 time per LED shown in Figure 7.6. Modulus means a flicker will blink 3 times for each LED as shown in Figure 7.7. We will do this for 3, 5, 7 and 9 trials respectively for each subject to obtain the EEG. We obtain the data around 20 times for each subjects and calculate average from data to obtain the accuracy of this experiment.
+In this experiment, we set the duty-cycle to be 0.7 and intensity to be 50\%. The experimental paradigm is shown in Table 7.2, we set the flickering type, sample length, epoch time, duty cycle, intensity and frequency to be the same. There are some difference in stimulus. We have 2 experiment of stimulus. First is regular, static means a flicker will blink 1 time per LED shown in Figure 7.6. Modular means a flicker will blink 3 times for each LED as shown in Figure 7.7. We will do this for 3, 5, 7 and 9 trials respectively for each subject to obtain the EEG. We obtain the data around 20 times for each subjects and calculate average from data to obtain the accuracy of this experiment.
 
 \begin{figure}[ht]
 	\centering
@@ -128,7 +128,7 @@ In this experiment, we set the duty-cycle to be 0.7 and intensity to be 50\%. Th
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale = 0.65]{chapter7/mod_nor.pdf}
-	\caption{Stimulus : Modulus}
+	\caption{Stimulus : Modular}
 \end{figure}
 
 \subsection{Experiment result I}
@@ -201,7 +201,7 @@ The result of this experiment is shown in Table 7.2 with same set of parameter f
 \item{\textbf{Subjects}}\newline
 In this experiment, we use 4 subjects. There are SS,OK,WP and NT that is the nickname and firstname of subjects.
 
-\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
 \begin{table}[ht]
 \centering
 \begin{tabular}{| P{.2\linewidth} | P{.2\linewidth} | P{.2\linewidth} |}
@@ -254,8 +254,20 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 
 In this experiment, we set duty-cycle be 0.7 and intensity to be 50\%. Experimental paradigm is shown in Table 7.1. We set the type of stimulus, sample length, epoch time, duty cycle, intensity and frequency to be the same. There are difference in flickering types. For first experiment, we blink regular flickers consecutively from LED1 to LED4, and the second experiment, uniform random is used to random the flickers. We have 3, 5, 7, and 9 trails for each subject to obtain the EEG. When we get the EEG, we take it to find average and accuracy of this experiment.
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale = 0.65]{chapter7/mod_nor.pdf}
+	\caption{Stimulus : Regular}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale = 0.65]{chapter7/mod_uni.pdf}
+	\caption{Stimulus : Modulus}
+\end{figure}
+
 \newpage
-\subsection{Experiment result I}
+\subsection{Experiment result II}
 
 \hspace{1.5cm} From the figure 7.6, we obtain the EEG data of flickers line Y1,Y3,Y5 and Y7 for experiment I from trial= 3, subject = "OK". When we receive the EEG data of each flicker (Figure 7.6), we use range of 290-350 millisecond to classify which flicker that the subject fixate. From figure 7.6, we will see the 4 lines of graph. Y1 the EEG data from flicker 1, Y3 is from flicker 2, Y5 is from flicker3, and Y7 is from flicker 4. Each line means that we collect the data of the subject for 3 trials and compute the average of the EEG data that we got in each line. When we have already computed the average, we apply the normalization to all of the data which are averages to compare with each other. In this figure, the flicker that the subject fixate is Y5 or flicker 3.
 

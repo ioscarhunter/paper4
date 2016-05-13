@@ -8,10 +8,10 @@
 
 \section{Hardware for the experiment}
 
-\hspace{1.5cm} In our project, first we plan how to investigate the EEG data from the subject. There are 2 categories to investigate the data those are software and hardware. When we know like that we go to study how is it different between software and hardware that use in this project and when we already study in it we know that hardware is better than software and we choose it and We plan to design the hardware to use it in experiment.This is materials that we use in our project.
+\hspace{1.5cm} In our project, first, we plan how to investigate the EEG data from the subject. There are 2 categories to investigate the data those are software and hardware. When we know like that we go to study how is it different between software and hardware that use in this project and when we already study in it, so we know that hardware is better than software ????? and we choose it and We plan to design the hardware to use it in the experiment. This is materials that we use in our project.
 
 \subsection{EPOC headset by Emotiv\texttrademark}
-\hspace{1.5cm} The wireless headset Emotiv EPOC research edition, it records EEG data in 14 channel of International 10-20 Locations system with Sequential sampling rate at 128 per second (2048 Hz internal) with resolution 14 bit (16 bit Analog to digital converter, 2-bit instrumental noise floor discarded), the bandwidth is in range 0.2 to 45 Hz with digital notch filters at 50Hz and 60 Hz
+\hspace{1.5cm} The wireless headset Emotiv EPOC research edition, it records EEG data in 14 channel of International 10-20 Locations system with Sequential sampling rate at 128 per second (2048 Hz internal) with resolution 14 bit (16 bit Analog to digital converter, 2-bit instrumental noise floor discarded), the bandwidth is in range 0.2 to 45 Hz with digital notch filters at 50Hz and 60 Hz.
 
 We use this equipment in our experiment to obtain the EEG from the subjects and we use EEG that we can obtain from the user to apply in our project.
 \begin{figure}[ht]
@@ -23,7 +23,7 @@ We use this equipment in our experiment to obtain the EEG from the subjects and 
 \subsection{Arduino Uno}
 \hspace{1.5cm} The Arduino Uno is a microcontroller board based on the ATmega328 that is an open source platform. It has 14 input/output pins6 analog inputs, a 16 MHz quartz crystal, a USB connection, a power jack, an ICSP header and a reset button, The USB connection for upload the software into the Arduino and VCC or supply for connecting the peripheral circuit.
 
-In our experiment, we use the arduino uno board to control the hardware which we use to stimuli subjects to get the EEG from subjects to apply it in our project.
+In our experiment, we use the Arduino UNO board to control the hardware which we use to stimuli subjects to get the EEG from subjects to apply it in our project.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale = 0.8]{chapter3/38.pdf}
@@ -33,7 +33,7 @@ In our experiment, we use the arduino uno board to control the hardware which we
 \subsection{Gravitech Gerora WS2812S LED}
 \hspace{1.5cm} The full-color Light-emitting diode (LED) driver which is use for stimulating the subject has an LED light WS2812 model mounted on. It can chain connected with the same model. It can be controlled by a programmed Arduino. The luminous intensity is 550 to 700 mega candela for red, 1100-1400 mcd for green, and 200-400 mcd for blue.
 
-For this hardware, we use it be flickers to blink the LED that in this board. We can control the frequency, intensity and color of LED. This hardware is controlled by the arduino uno board to stimuli subjects to get the EEG to apply in our project.
+For this hardware, we use it be flickers to blink the LED that in this board. We can control the frequency, intensity, and color of LED. This hardware is controlled by the Arduino Uno board to stimuli subjects to get the EEG to apply in our project.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale = 0.4]{chapter3/37.pdf}
@@ -41,17 +41,18 @@ For this hardware, we use it be flickers to blink the LED that in this board. We
 \end{figure}
 
 \subsection{Visual stimulus (ERP)}
-\hspace{1.5cm} As the Figure 7.4 show our prototype visual stimulator. It consist of the arduino board and gravitech gerora WS2812 LED board. This stimulator use to stimuli subjects to get EEG. This stimulator blink the light from LED 1 to LED 4 respectively. This stimulator was used in Experiment I.
+\hspace{1.5cm} As the Figure \ref{fig:vs} show our prototype visual stimulator. It consists of the Arduino board and gravitech gerora WS2812 LED board. This stimulator uses to stimuli subjects to get EEG. This stimulator blinks the light from LED 1 to LED 4 respectively. This stimulator was used in Experiment I.
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.25]{chapter7/frame_4.jpg}
 	\caption{Visual Stimulator with four targets used for ERPs}
+	\label{fig:vs}
 \end{figure}
 
 \newpage
 \subsection{Visual stimulus (SSVEP)}
-\hspace{1.5cm} This visual stimulator was developed based on the previous visual stimulus(ERP). The difference between this stimulator and previous stimulator is that, this stimulator has 8 flickers and each flicker has different frequencies, which was used in Experiment II and III.
+\hspace{1.5cm} This visual stimulator was developed based on the previous visual stimulus(ERP). The difference between this stimulator and previous stimulator is this stimulator has 8 flickers and each flicker has different frequencies, which was used in Experiment II and III.
 
 \begin{figure}[ht]
 	\centering
@@ -117,7 +118,7 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 \label{table:flicker}
 \end{table}
 
-In this experiment, we set the duty-cycle to be 0.7 and intensity to be 50\%. The experimental paradigm is shown in Table 7.2, we set the flickering type, sample length, epoch time, duty cycle, intensity and frequency to be the same. There are some difference in stimulus. We have 2 experiment of stimulus. First is regular, static means a flicker will blink 1 time per LED shown in Figure 7.6. Modular means a flicker will blink 3 times for each LED as shown in Figure 7.7. We will do this for 3, 5, 7 and 9 trials respectively for each subject to obtain the EEG. We obtain the data around 20 times for each subjects and calculate average from data to obtain the accuracy of this experiment.
+In this experiment, we set the duty-cycle to be 0.7 and intensity to be 50\%. The experimental paradigm is shown in Table 7.2, we set the flickering type, sample length, epoch time, duty cycle, intensity and frequency to be the same. There is some difference in stimulus. We have 2 experiment of stimulus. First is regular, static means a flicker will blink 1 time per LED is shown in Figure 7.6. Modular means a flicker will blink 3 times for each LED as shown in Figure 7.7. We will do this for 3, 5, 7 and 9 trials respectively for each subject to obtain the EEG. We obtain the data around 20 times for each subject and calculate average from data to obtain the accuracy of this experiment.
 
 \begin{figure}[ht]
 	\centering
@@ -139,7 +140,7 @@ In this experiment, we set the duty-cycle to be 0.7 and intensity to be 50\%. Th
 		\label{fig:yx}
 \end{figure}
 	
-\hspace{1.5cm} From the figure 7.6, we obtain the EEG data of flickers line $Y_1,Y_3,Y_5$ and $Y_7$ for experiment I from trial= 3, subject = "OK". When we receive the EEG data of each flicker (Figure \ref{fig:yx}), we use range of 290-350 millisecond to classify which flicker that the subject fixate. From figure 7.6, we will see the 4 lines of graph. $Y_1$ the EEG data from flicker 1, $Y_3$ is from flicker 2, $Y_5$ is from flicker3, and $Y_7$ is from flicker 4. Each line means that we collect the data of the subject for 3 trials and compute the average of the EEG data that we got in each line. When we have already computed the average, we apply the normalization to all of the data which are averages to compare with each other. In this figure, the flicker that the subject fixate is $Y_5$ or flicker 3.
+\hspace{1.5cm} From the figure 7.6, we obtain the EEG data of flickers line $Y_1,Y_3,Y_5$ and $Y_7$ for experiment I from trial= 3, subject = "OK". When we receive the EEG data of each flicker (Figure \ref{fig:yx}), we use a range of 290-350 millisecond to classify which flicker that the subject fixate. From figure 7.6, we will see the 4 lines of the graph. $Y_1$ the EEG data from flicker 1, $Y_3$ is from flicker 2, $Y_5$ is from flicker3, and $Y_7$ is from flicker 4. Each line means that we collect the data of the subject for 3 trials and compute the average of the EEG data that we got in each line. When we have already computed the average, we apply the normalization to all of the data which are averages to compare with each other. In this figure, the flicker that the subject fixate is $Y_5$ or flicker 3.
 
 \begin{figure}[ht]
 	\centering
@@ -148,7 +149,7 @@ In this experiment, we set the duty-cycle to be 0.7 and intensity to be 50\%. Th
 	\label{fig:e1ne2}
 \end{figure}
 
-From the figure \ref{fig:e1ne2}, we have a comparison graph of the first experiment EXP1 and the second experiment EXP2. Both are different in flickering types. EXP1's flickering type is regular, whereas EXP2 has a uniform random type. This graph display the accuracy of EXP1 and EXP2, where the trial = 7. The accuracy of EXP1 is equal to 70\% and EXP2 is equal to 80\%. We can see that EXP2 is more accurate than EXP1 in any trails that we use.
+From the figure \ref{fig:e1ne2}, we have a comparison graph of the first experiment EXP1 and the second experiment EXP2. Both are different in flickering types. EXP1's flickering type is regular, whereas EXP2 has a uniform random type. This graph illustrates the accuracy of EXP1 and EXP2, where the trial = 7. The accuracy of EXP1 is equal to 70\% and EXP2 is equal to 80\%. We can see that EXP2 is more accurate than EXP1 in any trails that we use.
 
 
 \begin{table}[ht]
@@ -194,7 +195,7 @@ From the figure \ref{fig:e1ne2}, we have a comparison graph of the first experim
 \label{table:result1}
 \end{table}
 
-The result of this experiment is shown in Table \ref{table:result} with same set of parameter for each stimulus, sample length, epoch time, duty cycle, intensity and frequency. First from the Table 7.2, we compare between regular and uniform random.In the first row we can see the accuracy of "OK" in uniform random is better than regular and "NT" in the last row we can see the accuracy of uniform random is better than regular too. We found each subject have better accuracy in uniform random than regular of flickering type.We found the other thing that is the trial of the experiment. We will compare between "WP" in second row and "WP" in tenth row.The accuracy of "WP" in tenth row is better than "WP" in second row. The main factor is trial that we use in each experiment. We found that when we use more trials, the accuracy is increased too.
+The result of this experiment is shown in Table \ref{table:result} with the same set of parameter for each stimulus, sample length, epoch time, duty cycle, intensity, and frequency. First from the Table 7.2, we compare between regular and uniform random. In the first row, we can see the accuracy of "OK" in uniform random is better than regular and "NT" in the last row we can see the accuracy of uniform random is better than regular too. We found each subject have better accuracy in the uniform distribution than regular of flickering type.We found the other thing that is the trial of the experiment. We will compare between "WP" in the second row and "WP" in tenth row.The accuracy of "WP" in the tenth row is better than "WP" in the second row. The main factor is the number of trial that we use in each experiment. We found that when we use more trials, the accuracy is increased too.
 
 \newpage
 \section{Experiment II}
@@ -254,7 +255,7 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 \label{table:paradigm2}
 \end{table}
 
-In this experiment, we set duty-cycle be 0.7 and intensity to be 50\%. Experimental paradigm is shown in Table 7.1. We set the type of stimulus, sample length, epoch time, duty cycle, intensity and frequency to be the same. There are difference in flickering types. For first experiment, we blink regular flickers consecutively from LED1 to LED4, and the second experiment, uniform random is used to random the flickers. We have 3, 5, 7, and 9 trails for each subject to obtain the EEG. When we get the EEG, we take it to find average and accuracy of this experiment.
+In this experiment, we set duty-cycle to be 0.7 and intensity to be 50\%. Experimental paradigm is shown in Table \ref{table:paradigm2}. We set the type of stimulus, sample length, epoch time, duty cycle, intensity and frequency to be the same. There is difference in flickering types. For the first experiment, we blink regular flickers consecutively from LED1 to LED4, and the second experiment, uniform random is used to random the flickers. We have 3, 5, 7, and 9 trials for each subject to obtain the EEG. When we get the EEG, we take it to find average and accuracy of this experiment.
 
 \begin{figure}[ht]
 	\centering
@@ -271,7 +272,7 @@ In this experiment, we set duty-cycle be 0.7 and intensity to be 50\%. Experimen
 \newpage
 \subsection{Experiment result II}
 
-\hspace{1.5cm} From the figure 7.6, we obtain the EEG data of flickers line Y1,Y3,Y5 and Y7 for experiment I from trial= 3, subject = "OK". When we receive the EEG data of each flicker (Figure 7.6), we use range of 290-350 millisecond to classify which flicker that the subject fixate. From figure 7.6, we will see the 4 lines of graph. Y1 the EEG data from flicker 1, Y3 is from flicker 2, Y5 is from flicker3, and Y7 is from flicker 4. Each line means that we collect the data of the subject for 3 trials and compute the average of the EEG data that we got in each line. When we have already computed the average, we apply the normalization to all of the data which are averages to compare with each other. In this figure, the flicker that the subject fixate is Y5 or flicker 3.
+\hspace{1.5cm} From the figure 7.6, we obtain the EEG data of flickers line $Y_1,Y_3,Y_5$ and $Y_7$ for experiment I from trial= 3, subject = "OK". When we receive the EEG data of each flicker (Figure 7.6), we use range of 290-350 millisecond to classify which flicker that the subject fixate. From figure 7.6, we will see the 4 lines of graph. Y1 the EEG data from flicker 1, Y3 is from flicker 2, Y5 is from flicker3, and Y7 is from flicker 4. Each line means that we collect the data of the subject for 3 trials and compute the average of the EEG data that we got in each line. When we have already computed the average, we apply the normalization to all of the data which are averages to compare with each other. In this figure, the flicker that the subject fixate is Y5 or flicker 3.
 
 \begin{figure}[ht]
 	\centering

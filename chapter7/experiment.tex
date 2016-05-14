@@ -87,6 +87,8 @@ In this experiment, we use 4 subjects. There are SS,OK,WP and NT that is the nic
 \label{table:subject}
 \end{table}
 
+\item{\textbf{Visual Stimulator}}
+In this experiment, we use 4 visual stimulator[LED 1($Y_1$),LED 2($Y_3$),LED 3($Y_5$),LED 4($Y_7$)]
 \item{\textbf{Stimulus}}
 For one trial, we use 11, 15, 19, 23 seconds respectively.
 \item{\textbf{Trials}}
@@ -149,19 +151,17 @@ In this experiment, we set the duty-cycle to be 0.7 and intensity to be 50\%. Th
 		\label{fig:avg}
 \end{figure}
 
-From the Figure 7.8. We obtain the raw EEG data of subject "OK". When we obtain these 5 trials of raw data, we will calculate the average of these raw data be shown in Figure 7.9 
+From the Figure \ref{fig:raw_data}, displays an example of raw EEG data that We obtain the data from subject "OK".n in Figure \ref{fig:avg} means the number of trials for each subject in this figure we use n equal to 5. When we obtain these 5 trials of raw data, we will calculate the average of these raw data shown in Figure \ref{fig:yx}
 
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{chapter7/erp_result.pdf}
-	\caption{EEG data of subject "OK" ,trial = 3 from flickers $Y_1,Y_3,Y_5$ and $Y_7$ }
+	\caption{EEG data of subject "OK" ,trial = 5 from flickers $Y_1,Y_3,Y_5$ and $Y_7$ }
 		\label{fig:yx}
 \end{figure}
 
-
-	
-From the figure 7.6, we obtain the EEG data of flickers line $Y_1,Y_3,Y_5$ and $Y_7$ for experiment I from trial= 3, subject = "OK". When we receive the EEG data of each flicker (Figure \ref{fig:yx}), we use a range of 290-350 millisecond to classify which flicker that the subject fixate. From figure 7.6, we will see the 4 lines of the graph. $Y_1$ the EEG data from flicker 1, $Y_3$ is from flicker 2, $Y_5$ is from flicker3, and $Y_7$ is from flicker 4. Each line means that we collect the data of the subject for 3 trials and compute the average of the EEG data that we got in each line. When we have already computed the average, we apply the normalization to all of the data which are averages to compare with each other. In this figure, the flicker that the subject fixate is $Y_5$ or flicker 3.
+From the figure 7.9, we obtain the average EEG data of subject "OK" that use only in 1 flicker. But in our experiment we use 4 flickers. When we merge all of average EEG data, we will get the data like figure 7.10. In the figure 7.10, we obtain the EEG data of flickers line $Y_1,Y_3,Y_5$ and $Y_7$ for experiment I from trial= 5, subject = "OK". When we receive the EEG data of each flicker (Figure \ref{fig:yx}), we use a range of 290-350 millisecond to classify which flicker that the subject fixate. From figure \ref{fig:yx}, we will see the 4 lines of the graph. $Y_1$ the EEG data from flicker 1, $Y_3$ is from flicker 2, $Y_5$ is from flicker3, and $Y_7$ is from flicker 4. Each line means that we collect the data of the subject for 3 trials and compute the average of the EEG data that we got in each line. When we have already computed the average, we apply the normalization to all of the data which are averages to compare with each other. In this figure, the flicker that the subject fixate is $Y_5$ or flicker 3.
 
 \begin{figure}[ht]
 	\centering

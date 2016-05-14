@@ -170,7 +170,7 @@ From the figure \ref{fig:avg}, we obtain the average of EEG data from subject "O
 	\label{fig:e1ne2}
 \end{figure}
 
-From the figure \ref{fig:e1ne2}, we have a comparison graph of the first experiment EXP1 and the second experiment EXP2. Both are different in flickering types. EXP1's flickering type is regular, whereas EXP2 has a uniform random type. This graph illustrates the accuracy of EXP1 and EXP2, where the trial = 7. The accuracy of EXP1 is equal to 52.5\% and EXP2 is equal to 80\%. We can see that EXP2 is more accurate than EXP1 in any trails that we use.
+From the figure \ref{fig:e1ne2}, we have a comparison graph of the first experiment EXP1 and the second experiment EXP2. Both are different in flickering types. EXP1's flickering type is regular, whereas EXP2 has a uniform random type. This graph illustrates the accuracy of EXP1 and EXP2, where the trial = 7. The accuracy of EXP1 is equal to 57.5\% and EXP2 is equal to 67.5\%. We can see that EXP2 is more accurate than EXP1 in any trails that we use.
 
 
 \begin{table}[ht]
@@ -257,7 +257,7 @@ In this experiment, we control the light illuminate value at 37 Lux.
 There are 4 parameters. First is flickering type, stimulus, sample length and epoch time.
 \end{itemize}
 
-\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
 \begin{table}[ht]
 \centering
 \begin{tabular}{| P{.3\linewidth} | P{.3\linewidth} | P{.3\linewidth} |}
@@ -278,18 +278,19 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 \label{table:paradigm2}
 \end{table}
 
+In this experiment, we set the 
 In this experiment, we set duty-cycle to be 0.7 and intensity to be 50\%. Experimental paradigm is shown in Table \ref{table:paradigm2}. We set the type of stimulus, sample length, epoch time, duty cycle, intensity and frequency to be the same. There is difference in flickering types. For the first experiment, we blink regular flickers consecutively from LED1 to LED4, and the second experiment, uniform random is used to random the flickers. We have 3, 5, 7, and 9 trials for each subject to obtain the EEG. When we get the EEG, we take it to find average and accuracy of this experiment.
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale = 0.65]{chapter7/mod_nor.pdf}
-	\caption{Stimulus : Regular}
+	\caption{Flickering type : Regular}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale = 0.65]{chapter7/mod_uni.pdf}
-	\caption{Stimulus : Modulus}
+	\caption{Flickering type : Uniform random}
 \end{figure}
 
 \newpage

@@ -161,7 +161,7 @@ From the Figure \ref{fig:raw_data}, displays an example of raw EEG data obtained
 		\label{fig:yx}
 \end{figure}
 
-From the figure \ref{fig:avg}, we obtain the average of EEG data from subject "OK" ,which uses only in 1 flicker. However, we use 4 flickers in our experiment. When we merge all of average EEG data, we will get the data in figure \ref{fig:yx}. In the figure \ref{fig:yx}, we obtain the EEG data of flickers line $Y_1,Y_3,Y_5$ and $Y_7$ for experiment I from trial= 5, subject = "OK". When we receive the EEG data of each flicker (Figure \ref{fig:yx}), we use a range of 290-350 millisecond to classify which flicker that the subject fixate. From figure \ref{fig:yx}, we will see the 4 lines of the graph. $Y_1$ the EEG data from flicker 1, $Y_3$ is from flicker 2, $Y_5$ is from flicker3, and $Y_7$ is from flicker 4. Each line means that we collect the data of the subject for 3 trials and compute the average of the EEG data that we got in each line. When we have already computed the average, we apply the normalization to all of the data which are averages to compare with each other. In this figure, the flicker that the subject fixate is $Y_5$ or flicker 3.
+From the figure \ref{fig:avg}, we obtain the average of EEG data from subject "OK" ,which uses only in 1 flicker. However, we use 4 flickers in our experiment. When we merge all of average EEG data, we will get the data in figure \ref{fig:yx}. In the figure \ref{fig:yx}, we obtain the EEG data of flickers line $Y_1,Y_3,Y_5$ and $Y_7$ for experiment I from trial= 5, subject = "OK". When we receive the EEG data of each flicker (Figure \ref{fig:yx}), we use a range of 290-350 millisecond to classify which flicker that the subject fixate. From figure \ref{fig:yx}, we will see the 4 lines of the graph. $Y_1$ the EEG data from flicker 1, $Y_3$ is from flicker 2, $Y_5$ is from flicker3, and $Y_7$ is from flicker 4. Each line means that we collect the data of the subject for 3 trials and compute the average of the EEG data that we get in each line. When we have already computed the average, we apply the normalization to all of the data which are averages to compare with each other. In this figure, the flicker that the subject fixate is $Y_5$ or flicker 3.
 
 \begin{figure}[ht]
 	\centering
@@ -184,7 +184,7 @@ From the figure \ref{fig:compare1}, we have a comparison graph of the first expe
             \multirow{2}{*}{\textbf{Subject}} &
             \multicolumn{2}{c|}{\textbf{Accuracy of stimulus}} \\
             \cline{4-5}
-            &&&\multicolumn{1}{c|}{\textbf{Regular}} &\multicolumn{1}{c|}{\textbf{Modulus}}  \\
+            &&&\multicolumn{1}{c|}{\textbf{Regular}} &\multicolumn{1}{c|}{\textbf{Modular}}  \\
 			\hline 
 			\multirow{4}{*}{3}&\multirow{4}{*}{11}&OK&25&40 \\
 			\cline{3-5}
@@ -216,7 +216,7 @@ From the figure \ref{fig:compare1}, we have a comparison graph of the first expe
 \label{table:result1}
 \end{table}
 
-The result of this experiment is shown in Table \ref{table:result1} with the same set of parameter for each stimulus, sample length, epoch time, duty cycle, intensity, and frequency. First from the Table \ref{table:stimulus}, we compare between static and modular. In the first row, we can see the accuracy of "OK" in modular is better than static and "NT" in the last row we can see the accuracy of modular is better than static too. We found each subject have better accuracy in the modular than static of stimulus. We found the other thing that is the trial of the experiment. We will compare between "WP" in the second row and "WP" in tenth row.The accuracy of "WP" in the tenth row is better than "WP" in the second row. The main factor is the number of trial that we use in each experiment. We found that when we use more trials, the accuracy is increased too.
+The result of this experiment is shown in Table \ref{table:result1} with the same set of parameter for each stimulus, sample length, epoch time, duty cycle, intensity, and frequency. From the Table \ref{table:stimulus},the first row, we can see the accuracy of "SS" in modular is better than static in the same row. Another subject "WP" in the fourteenth row, we can see the accuracy of modular is better than static too. We found each subject have better accuracy in the modular than static of stimulus. We found another thing that is the trial of the experiment. We will compare the accuracy between "OK" in the fi row and "OK" in fourteenth row. The result is "OK" in the fourteenth row is better than "OK" in the first row. accuracy of "WP" in the tenth row is better than "WP" in the second row. The main factor is the number of trial that we use in each experiment. We found that when we use more trials, the accuracy is increased too.
 
 \newpage
 \section{Experiment II}
@@ -280,36 +280,35 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 
 In this experiment, we set it to be the same as experiment I. However, there is a difference in flickering type. In this experiment, we use a regular, and uniform random flickering types. The regular flickering type means that the flicker will blink from LED1 to LED4 respectively. The uniform random flickering type is used to randomly select the flickers to blink. We have 3,5,7 and 9 trials for each subject to obtain the EEG to be the same as experiment I. We will obtain the EEG and calculate the average and accuracy of this experiment.
 
+From the result of experiment I, the modular stimulus is better than static stimulus. So, we will use the modular stimulus in this experiment. In this experiment, the flickers will be the same as figure\ref{fig:mod_reg} and figure \ref{fig:mod_uni}.
+In figure \ref{fig:mod_reg} is shown the regular flickering type with the modular stimulus. The flicker will blink from LED1 to LED4 and it will blink 3 times per each LED. In the same way, the figure \ref{fig:mod_uni} is shown the uniform random flickering type with the modular stimulus that means each flicker will blink randomly and blink 3 time for each flicker.
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale = 0.65]{chapter7/mod_nor.pdf}
 	\caption{Flickering type : Regular}
+    \label{fig:mod_reg}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale = 0.65]{chapter7/mod_uni.pdf}
 	\caption{Flickering type : Uniform random}
+    \label{fig:mod_uni}
 \end{figure}
 
 \newpage
 \subsection{Experiment result II}
+\hspace{1.5cm} In this experiment, we use the method to find the accuracy be the same as the experiment I.
+We obtain the raw EEG data from each subject and calculate the average data from the trials which be set.When we calculated the average of EEG data, we use this average data to find the accuracy of this experiment.
 
-From the figure 7.6, we obtain the EEG data of flickers line $Y_1,Y_3,Y_5$ and $Y_7$ for experiment I from trial= 3, subject = "OK". When we receive the EEG data of each flicker (Figure 7.6), we use range of 290-350 millisecond to classify which flicker that the subject fixate. From figure 7.6, we will see the 4 lines of graph. Y1 the EEG data from flicker 1, Y3 is from flicker 2, Y5 is from flicker3, and Y7 is from flicker 4. Each line means that we collect the data of the subject for 3 trials and compute the average of the EEG data that we got in each line. When we have already computed the average, we apply the normalization to all of the data which are averages to compare with each other. In this figure, the flicker that the subject fixate is Y5 or flicker 3.
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=\textwidth]{chapter7/erp_result.pdf}
-	\caption{EEG data of subject "OK" ,trial = 3 from flickers Y1,Y3,Y5 and Y7}
-\end{figure}
-
-From the figure 7.7, we have a comparison graph of the first experiment EXP A and the second experiment EXP B. Both are different in flickering types. EXP A's flickering type is regular, whereas EXP B has a uniform random type. This graph display the accuracy of EXP A and EXP B, where the trial = 7. The accuracy of EXP A is equal to 70\% and EXP B is equal to 80\%. We can see that EXP B is more accurate than EXP A in any trails that we use.
+From the figure \ref{fig:comp2}, we have a comparison graph of the first experiment EXP A and the second experiment EXP B. Both are different in flickering types. EXP A's flickering type is regular, whereas EXP B has a uniform random type. This graph display the accuracy of EXP A and EXP B, where the trial = 9. The accuracy of EXP A is equal to 73.75\% and EXP B is equal to 85\%. We can see that EXP B is more accurate than EXP A in any trails that we use.
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=\textwidth]{chapter7/result_12_2.pdf}
+	\includegraphics[scale = 0.8]{chapter7/result_12_2.pdf}
 	\caption{Comparison between the result of experiment A and B}
+    \label{fig:comp2}
 \end{figure}
 
 \begin{table}[ht]
@@ -355,7 +354,7 @@ From the figure 7.7, we have a comparison graph of the first experiment EXP A an
 \label{table:result2}
 \end{table}
 
-The result of this experiment is shown in Table 7.2 with same set of parameter for each stimulus, sample length, epoch time, duty cycle, intensity and frequency. First from the Table 7.2, we compare between regular and uniform random.In the first row we can see the accuracy of "OK" in uniform random is better than regular and "NT" in the last row we can see the accuracy of uniform random is better than regular too. We found each subject have better accuracy in uniform random than regular of flickering type.We found the other thing that is the trial of the experiment. We will compare between "WP" in second row and "WP" in tenth row.The accuracy of "WP" in tenth row is better than "WP" in second row. The main factor is trial that we use in each experiment. We found that when we use more trials, the accuracy is increased too.
+The result of this experiment is shown in Table \ref{table:result2} with same set of parameter for each stimulus, sample length, epoch time, duty cycle, intensity and frequency. First from the Table \ref{table:result2}, we compare between regular and uniform random. We can see the accuracy of "WP" in uniform random is better than regular of "WP" in the same row. The accuracy between regular and uniform random of "NT" in the last row of the table, regular is lower accuracy than uniform random. We found any subject have better accuracy in uniform random than regular of flickering type. We found another thing that is the trials of the experiment. The comparison of accuracy between "WP" in second row and "WP" in tenth row is the accuracy of "WP" in the tenth row is better than in the second row. The main factor is trial that we use in each experiment. We found that when we use more trials, the accuracy is increased same as experiment I.
 
 
 

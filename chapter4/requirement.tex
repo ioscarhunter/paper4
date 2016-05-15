@@ -74,7 +74,7 @@ use case" }
 		\hline 
 		1. Subject asks admin to access the system &   \\
 		\hline 
-		2. Subject is equipped the Emotiv headset by admin  &   \\
+		2. Subject is equipped the emotiv headset by admin  &   \\
 		\hline 
 		& 3. The system returns the EEG-headset status (Green light) to admin \\
 		\hline 
@@ -107,11 +107,11 @@ use case" }
 			\hline 
 			1. Subject asks admin to access the system &   \\
 			\hline 
-			2. Subject is equipped the Emotiv headset by admin  &   \\
+			2. Subject is equipped the emotiv headset by admin  &   \\
 			\hline 
 			3. Subject fixates on the flickers of stimulus & \\
 			\hline 
-			4. Admin observes subject brainwave signal in different channel & \\
+			4. Admin observes subject brainwave signal in different channels & \\
 			\hline
 			& 5. The system accepts the EEG of user \\
 			\hline
@@ -142,13 +142,13 @@ use case" }
 			\hline 
 			1. Subject asks admin to access the system &   \\
 			\hline 
-			2. Subject is equipped the Emotiv headset by admin  &   \\
+			2. Subject is equipped the emotiv headset by admin  &   \\
 			\hline 
 			3. Subject fixates on the flickers of stimulus & \\
 			\hline 
 			& 4. The system will calculate the feature pattern and show the result of calculation to admin  \\
 			\hline
-			5. Admin observes the subject’s peak frequency domain & \\
+			5. Admin observes the subject's peak frequency domain & \\
 			\hline
 			
 		\end{tabular}
@@ -162,7 +162,7 @@ use case" }
 	\item [Previous cases:] -
 	\item [Use case:] Resting state
 	\item [Actor:] User  
-	\item [Goal:] To obtain the EEG of user in general state. 
+	\item [Goal:] To obtain the EEG of user in general state which use to compare with other state. 
 	\item [Overview:] This is a step that every user must pass this step to control the program in next step. The EEG of the user that be obtained in this step we use it like a baseline. 
 	\item [Typical course of events:]~
 	
@@ -176,11 +176,11 @@ use case" }
 			\hline 
 			1. Subject asks admin to access the system. &   \\
 			\hline 
-			2. Subject is equipped the Emotive headset bu admin   &   \\
+			2. Subject is equipped the Emotive headset by admin   &   \\
 			\hline 
-			& 3. The System will show the status of Emotiv headset \\
+			& 3. The system will show the status of Emotiv headset \\
 			\hline 
-			4. Admins will tell Subject about Emotiv's status is good &  \\
+			4. Admins will tell subject about emotiv's status is good &  \\
 			\hline
 			5. Subject fixates on the flickers of stimulus &  \\
 			\hline
@@ -214,13 +214,13 @@ use case" }
 			\hline 
 			2. Subject fixates on the flickers of stimulus   &   \\
 			\hline 
-			& 3. The system will record the subject’s EEG \\
+			& 3. The system will record the subject's EEG \\
 			\hline 
-			& 4. The system will match the EEG with the EEG of subject’s baseline  \\
+			& 4. The system will match the EEG with the EEG of subject's baseline  \\
 			\hline
 			& 5. The system will determine what menu that user want to select \\
 			\hline
-			& 6. The system will select the menu program\\
+			& 6. The system will select the menu of the program\\
 			\hline
 			
 		\end{tabular}
@@ -228,82 +228,6 @@ use case" }
 	
 \end{description}
 
-\newpage
-\item \textbf{Expanded description of the "ERP" use case }
-\begin{description}
-	\item [Previous cases:] select the menu program
-	\item [Use case:] ERP
-	\item [Actor:] User  
-	\item [Goal:] To be granted select the menu program from the system using ERP. 
-	\item [Overview:] This is also the step that every user who want to grant select the menu to control the program. The EEG of the subject has to match to the EEG that subject is recorded the baseline’s EEG using ERP. 
-	\item [Typical course of events:]~
-	
-	{
-		\centering
-		\begin{tabular}{| m{.47\linewidth} | m{.47\linewidth} |}
-			
-			\hline 
-			\multicolumn{1}{|c}{\textbf{User}} & 
-  			\multicolumn{1}{|c|}{\textbf{System}}\\
-			\hline 
-			1. Subject passed the resting state process &   \\
-			\hline 
-			2. Subject fixates on the flickers of stimulus   &   \\
-            \hline 
-			& 3. The system will blink the flickers up according to ERP algorithm \\
-			\hline 
-			& 3. The system will record the subject’s EEG \\
-			\hline 
-			& 4. The system will match the EEG with the EEG of subject’s baseline  \\
-			\hline
-			& 5. The system will determine what menu that user want to select \\
-			\hline
-			& 6. The system will select the menu program\\
-			\hline
-			
-		\end{tabular}
-	}
-	
-\end{description}
-
-\newpage
-\item \textbf{Expanded description of the "SSVEP" use case }
-\begin{description}
-	\item [Previous cases:] select the menu program
-	\item [Use case:] SSVEP
-	\item [Actor:] User  
-	\item [Goal:] To be granted select the menu program from the system using ERP. 
-	\item [Overview:] This is also the step that every user who want to grant select the menu to control the program. The EEG of the subject has to match to the EEG that subject is recorded the baseline’s EEG using SSVEP. 
-	\item [Typical course of events:]~
-	
-	{
-		\centering
-		
-		\begin{tabular}{| m{.47\linewidth} | m{.47\linewidth} |}
-			
-			\hline 
-			\multicolumn{1}{|c}{\textbf{User}} & 
-  			\multicolumn{1}{|c|}{\textbf{System}}\\
-			\hline 
-			1. Subject passed the resting state process &   \\
-			\hline 
-			2. Subject fixates on the flickers of stimulus   &   \\
-            \hline 
-			& 3. The system will blink the flickers up according to SSVEP algorithm \\
-			\hline 
-			& 3. The system will record the subject’s EEG \\
-			\hline 
-			& 4. The system will match the EEG with the EEG of subject’s baseline  \\
-			\hline
-			& 5. The system will determine what menu that user want to select \\
-			\hline
-			& 6. The system will select the menu program\\
-			\hline
-			
-		\end{tabular}
-	}
-	
-\end{description}
 \end{itemize}
 
 
@@ -317,7 +241,6 @@ use case" }
 \centering \includegraphics[scale=0.31]{chapter4/Rest.pdf}
 \caption{Activity diagram of resting state}
 \end{figure}
-
 
 
 \subsection{Activity diagram of ERP}

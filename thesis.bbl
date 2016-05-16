@@ -84,7 +84,9 @@ Emotiv,
 \textit{“Brain computer interface \& scientific contextual EEG,”}. 
 Emotiv, 2014.
 
-
-
+\bibitem{senior}
+Narongrit inkaew,Nattaphon charoenkitkamjorn,Chongkon yangpaiboon
+\textit{"User authentication system using EEG signal for cognitive biometrics"}
+Bachelor of engineering program in software engineering, international college, King Mongkut's Institute of Technology Ladkrabang,2014
 
 \end{thebibliography}

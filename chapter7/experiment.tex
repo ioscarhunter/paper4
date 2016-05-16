@@ -120,7 +120,7 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 \label{table:stimulus}
 \end{table}
 
-In this experiment, we set the duty-cycle to be 0.7 and intensity to be 50\%. The experimental paradigm is shown in Table 7.2, we set the flickering type, sample length, epoch time, duty cycle, intensity and frequency to be the same. There is some difference in stimulus. We have 2 experiment of stimulus. First is regular, static means a flicker will blink 1 time per LED is shown in Figure 7.6. Modular means a flicker will blink 3 times for each LED as shown in Figure 7.7. We will do this for 3, 5, 7 and 9 trials respectively for each subject to obtain the EEG. We obtain the data around 20 times for each subject and calculate average from data to obtain the accuracy of this experiment.
+In this experiment, we set the duty-cycle to be 0.7 and light intensity to be 50\%. The experimental paradigm is shown in Table 7.2, we set the flickering type, sample length, epoch time, duty cycle, intensity and frequency to be the same. There is some difference in stimulus. We have 2 experiment of stimulus. First is regular, static means a flicker will blink 1 time per LED is shown in Figure 7.6. Modular means a flicker will blink 3 times for each LED as shown in Figure 7.7. We will do this for 3, 5, 7 and 9 trials respectively for each subject to obtain the EEG. We obtain the data around 20 times for each subject and calculate average from data to obtain the accuracy of this experiment.
 
 \begin{figure}[ht]
 	\centering
@@ -380,56 +380,59 @@ In this experiment, we use 4 subjects. There are SS,OK,WP and NT that is the nic
 \end{table}
 
 \item{\textbf{Visual Stimulator}}
-In this experiment, we use 4 visual stimulator[LED 1($Y_1$),LED 2($Y_3$),LED 3($Y_5$),LED 4($Y_7$)]
+In this experiment, we use 1 visual stimulator[LED 1($Y_1$)]
 \item{\textbf{Stimulus}}
-For one trial, we use 11, 15, 19, 23 seconds respectively.
+In this experiment, we separate the stimulus in 2 categories per one trial.
+First, we obtain the EEG data of the subject to be baseline 6 seconds.
+In active state, we obtain the EEG of the subject in 14 seconds.
 \item{\textbf{Trials}}
-We recorded 3, 5, 7, 9 times for each set of parameter.
+We recorded 20 trials for each set of parameter.
 \item{\textbf{Environment}}
 In this experiment, we control the light illuminate value at 37 Lux.
-	\item{\textbf{Parameters}}\\
-There are 4 parameters. First is flickering type, stimulus, sample length and epoch time.
+\item{\textbf{Parameters}}\\
+There are 4 parameters. First is frequency, duty cycle, light intensity, and light color.
 \end{itemize}
-
 
 \begin{table}[ht]
 \centering
-\begin{tabular}{| P{.3\linewidth} | P{.3\linewidth} | P{.3\linewidth} |}
-			
-			\hline 
-			\textbf{Parameter} & \textbf{Experiment A}  & \textbf{Experiment B}\\
-			\hline 
-			Flickering type & Regular & Uniform random   \\
-			\hline 
-			Stimulus & \multicolumn{2}{c}{Modular} \vline\\
-			\hline 
-			Sample Length & \multicolumn{2}{c}{64samples/epoch} \vline\\
-			\hline 
-			Epoch time & \multicolumn{2}{c}{500 ms} \vline\\
-			\hline
-		\end{tabular}       
-\caption{Experimental paradigm II}
-\label{table:paradigm2}
+\begin{tabular}{| c | c | c | c |}
+	\hline 
+    \textbf{Frequency(Hz)}&\textbf{Duty}&\textbf{Intensity(\%)}&\textbf{color}\\
+    \hline
+    6&\multirow{24}{*}{\textbf{0.7}}&
+    \multirow{24}{*}{50}&
+    \multirow{24}{*}{Green}\\
+    \cline{1-1}
+    7&&&\\\cline{1-1}
+    8&&&\\ \cline{1-1}
+    9&&&\\ \cline{1-1}
+    10&&&\\ \cline{1-1}
+    11&&&\\ \cline{1-1}
+    12&&&\\ \cline{1-1}
+    13&&&\\\cline{1-1}
+    14&&&\\ \cline{1-1}
+    15&&&\\ \cline{1-1}
+    16&&&\\ \cline{1-1}
+    17&&&\\ \cline{1-1}
+    18&&&\\ \cline{1-1}
+    19&&&\\ \cline{1-1}
+    20&&&\\ \cline{1-1}
+    21&&&\\ \cline{1-1}
+    22&&&\\ \cline{1-1}
+    23&&&\\ \cline{1-1}
+    24&&&\\ \cline{1-1}
+    25&&&\\ \cline{1-1}
+    26&&&\\ \cline{1-1}
+    27&&&\\ \cline{1-1}
+    28&&&\\ \cline{1-1}
+    29&&&\\ 
+    \hline
+	\end{tabular}       
+\caption{Experiment paradigm III}
+\label{table:paradigm_3}
 \end{table}
 
-In this experiment, we set it to be the same as experiment I. However, there is a difference in flickering type. In this experiment, we use a regular, and uniform random flickering types. The regular flickering type means that the flicker will blink from LED1 to LED4 respectively. The uniform random flickering type is used to randomly select the flickers to blink. We have 3,5,7 and 9 trials for each subject to obtain the EEG to be the same as experiment I. We will obtain the EEG and calculate the average and accuracy of this experiment.
-
-From the result of experiment I, the modular stimulus is better than static stimulus. So, we will use the modular stimulus in this experiment. In this experiment, the flickers will be the same as figure\ref{fig:mod_reg} and figure \ref{fig:mod_uni}.
-In figure \ref{fig:mod_reg} is shown the regular flickering type with the modular stimulus. The flicker will blink from LED1 to LED4 and it will blink 3 times per each LED. In the same way, the figure \ref{fig:mod_uni} is shown the uniform random flickering type with the modular stimulus that means each flicker will blink randomly and blink 3 time for each flicker.
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale = 0.65]{chapter7/mod_nor.pdf}
-	\caption{Flickering type : Regular}
-    \label{fig:mod_reg}
-\end{figure}
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale = 0.65]{chapter7/mod_uni.pdf}
-	\caption{Flickering type : Uniform random}
-    \label{fig:mod_uni}
-\end{figure}
+From table \ref{table:paradigm_3}, we set duty cycle = 0.7, light intensity 50\%, and light color = "Green". There is some difference in frequencies. We use frequencies from 6Hz to 29Hz in our experiment. We use only 1 flicker in this experiment to obtain the EEG signal. The subjects observe the visual stimulator in 1 trial, 20 times per subject. Two channels position that we use in our experiment of visual cortex is $O_1$ and $O_2$. When EEG signal that we obtained is analyzed, we will calculate the accuracy of the experiment.
 
 \newpage
 \subsection{Experiment result II}

@@ -436,9 +436,9 @@ From table \ref{table:paradigm_3}, we set duty cycle = 0.7, light intensity 50\%
 
 \newpage
 \subsection{Experiment result III}
-\hspace{1.5cm} We use this experiment to find the best accuracy of these frequencies to detect what frequency that we should use to control the program. We obtain the raw EEG data from each subject. In one trial, we use windowing function to separate the raw EEG data into sections, the windowing function that we use is 512 samples. When we get the windowing data, the data will be analyzed by using the fourier transform. When we got the fourier transform data, this data minus baseline we will got other data to classify the flickers.The classification algorithm is peak detection, this algorithm we use to find the peak of EEG data that already classified and we will get the accuracy of this experiment.
+\hspace{1.5cm} We use this experiment to find the best accuracy among these frequencies to detect the fittest flicker to be used to control the program. We obtain the raw EEG data from each subject. In one trial, we use windowing function to separate the raw EEG data into segments. We use 512 samples for windowing function. When we get the windowing data. Then, the data will be analyzed by using the Fourier transform. Once the Fourier transform data is obtained, this data will be subtracted from the baseline. We will obtain other data to classify the flickers.The classification algorithm is peak detection. This algorithm is used to find the peak of the EEG data that is already classified, and will be used to calculate the accuracy of this experiment.
 
-From the figure \ref{fig:avg_exp3}, This is the accuracy of data of all subject that analyzed by method that we said in previous paragraph. The best accuracy is 83\% is belong to frequency at 15 Hz and next accuracy is 81\$ is belong to frequency at 14 Hz. 
+From the figure \ref{fig:avg_exp3}, This is the accuracy data of all subjects which are analyzed by the method mentioned in previous paragraph. The best accuracy is 83\% and belongs to the frequency at 15 Hz. The next accuracy is 81\$ and belongs to the frequency at 14 Hz. 
 
 \begin{figure}[ht]
 	\centering
@@ -496,6 +496,12 @@ From the figure \ref{fig:avg_exp3}, This is the accuracy of data of all subject 
 			&SS&60& \\ \cline{2-3}
 			&NT&75& \\
             \hline 
+            \multirow{4}{*}{18}&OK&70&\multirow{4}{*}{68.75} \\
+			\cline{2-3}
+			&WP&65& \\ \cline{2-3}
+			&SS&65& \\ \cline{2-3}
+			&NT&75& \\
+            \hline
     \end{tabular}
 \caption{Experiment result III}
 \label{table:result3}
@@ -506,12 +512,6 @@ From the figure \ref{fig:avg_exp3}, This is the accuracy of data of all subject 
 \begin{tabular}{| c | c | c | c |}      
             \hline 
             \textbf{Frequency(Hz)}&\textbf{Subject}&\textbf{Accuracy(\%)}&\textbf{Averaged accuracy(\%)}\\
-            \hline
-            \multirow{4}{*}{18}&OK&70&\multirow{4}{*}{68.75} \\
-			\cline{2-3}
-			&WP&65& \\ \cline{2-3}
-			&SS&65& \\ \cline{2-3}
-			&NT&75& \\
             \hline
             \multirow{4}{*}{19}&OK&60&\multirow{4}{*}{57.5} \\
 			\cline{2-3}
@@ -584,4 +584,5 @@ From the figure \ref{fig:avg_exp3}, This is the accuracy of data of all subject 
 \label{table:result3_2}
 \end{table}
 
+From table \ref{table:result3} and table \ref{table:result3_2} shown the accuracy of all subject and average of accuracy of subjects in each frequency. There are 4 subjects in this experiment and each subject has difference accuracy. For example, subject "OK" in frequency 11 Hz has 40\% of accuracy
 The result of this experiment is shown in Table \ref{table:result2} with same set of parameter for each stimulus, sample length, epoch time, duty cycle, intensity and frequency. First from the Table \ref{table:result2}, we compare between regular and uniform random. We can see the accuracy of "WP" in uniform random is better than regular of "WP" in the same row. The accuracy between regular and uniform random of "NT" in the last row of the table, regular is lower accuracy than uniform random. We found any subject have better accuracy in uniform random than regular of flickering type. We found another thing that is the trials of the experiment. The comparison of accuracy between "WP" in second row and "WP" in tenth row is the accuracy of "WP" in the tenth row is better than in the second row. The main factor is trial that we use in each experiment. We found that when we use more trials, the accuracy is increased same as experiment I.

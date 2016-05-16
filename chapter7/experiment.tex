@@ -436,57 +436,151 @@ From table \ref{table:paradigm_3}, we set duty cycle = 0.7, light intensity 50\%
 
 \newpage
 \subsection{Experiment result III}
-\hspace{1.5cm} We use this experiment to find the best accuracy of these frequencies to detect what frequency that we should use to control the program. We obtain the raw EEG data from each subject. In one trial, we use windowing function to separate the raw EEG data into sections, the windowing function that we use is 512 samples. When we get the windowing data, data is 
-We obtain the raw EEG data from each subject and calculate the average data from the trials which be set.When we calculated the average of EEG data, we use this average data to find the accuracy of this experiment.
+\hspace{1.5cm} We use this experiment to find the best accuracy of these frequencies to detect what frequency that we should use to control the program. We obtain the raw EEG data from each subject. In one trial, we use windowing function to separate the raw EEG data into sections, the windowing function that we use is 512 samples. When we get the windowing data, the data will be analyzed by using the fourier transform. When we got the fourier transform data, this data minus baseline we will got other data to classify the flickers.The classification algorithm is peak detection, this algorithm we use to find the peak of EEG data that already classified and we will get the accuracy of this experiment.
 
-From the figure \ref{fig:avg_exp3}, we have a comparison graph of the first experiment EXP A and the second experiment EXP B. Both are different in flickering types. EXP A's flickering type is regular, whereas EXP B has a uniform random type. This graph display the accuracy of EXP A and EXP B, where the trial = 9. The accuracy of EXP A is equal to 73.75\% and EXP B is equal to 85\%. We can see that EXP B is more accurate than EXP A in any trails that we use.
+From the figure \ref{fig:avg_exp3}, This is the accuracy of data of all subject that analyzed by method that we said in previous paragraph. The best accuracy is 83\% is belong to frequency at 15 Hz and next accuracy is 81\$ is belong to frequency at 14 Hz. 
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale = 1]{chapter7/exp4.pdf}
-	\caption{The average data of all subjects}
+	\caption{The accuracy of all subjects}
     \label{fig:avg_exp3}
 \end{figure}
 
 \begin{table}[ht]
 \centering
-\begin{tabular}{| c | c | c | c | c |}
+\begin{tabular}{| c | c | c | c |}
 
 			\hline 
-			\multirow{2}{*}{\textbf{Trial}} & 
-  			\multirow{2}{*}{\textbf{Total time [s]}}  & 
-            \multirow{2}{*}{\textbf{Subject}} &
-            \multicolumn{2}{c|}{\textbf{Accuracy of flickering type}} \\
-            \cline{4-5}
-            &&&\multicolumn{1}{c|}{\textbf{Regular}} &\multicolumn{1}{c|}{\textbf{Uniform}}  \\
+            \textbf{Frequency(Hz)}&\textbf{Subject}&\textbf{Accuracy(\%)}&\textbf{Averaged accuracy(\%)}\\
 			\hline 
-			\multirow{4}{*}{3}&\multirow{4}{*}{11}&OK&40&50 \\
-			\cline{3-5}
-			&&WP&40&55 \\ \cline{3-5}
-			&&SS&30&55 \\ \cline{3-5}
-			&&NT&30&60 \\
+			\multirow{4}{*}{11}&OK&40&\multirow{4}{*}{41.25} \\
+			\cline{2-3}
+			&WP&35& \\ \cline{2-3}
+			&SS&50& \\ \cline{2-3}
+			&NT&40& \\
             \hline
-			\multirow{4}{*}{5}&\multirow{4}{*}{15}&OK&45&60 \\
-			\cline{3-5}
-			&&WP&55&70 \\ \cline{3-5}
-			&&SS&65&65 \\ \cline{3-5}
-			&&NT&55&75 \\
+			\multirow{4}{*}{12}&OK&65&\multirow{4}{*}{58.75} \\
+			\cline{2-3}
+			&WP&65& \\ \cline{2-3}
+			&SS&60& \\ \cline{2-3}
+			&NT&45& \\
             \hline
-            \multirow{4}{*}{7}&\multirow{4}{*}{19}&OK&65&70 \\
-			\cline{3-5}
-			&&WP&70&75 \\ \cline{3-5}
-			&&SS&70&70 \\ \cline{3-5}
-			&&NT&65&75 \\
+           \multirow{4}{*}{13}&OK&80&\multirow{4}{*}{72.5} \\
+			\cline{2-3}
+			&WP&80& \\ \cline{2-3}
+			&SS&65& \\ \cline{2-3}
+			&NT&65& \\
+            \hline
+            \multirow{4}{*}{14}&OK&80&\multirow{4}{*}{81.25} \\
+			\cline{2-3}
+			&WP&85& \\ \cline{2-3}
+			&SS&90& \\ \cline{2-3}
+			&NT&70& \\
+            \hline
+            \multirow{4}{*}{15}&OK&85&\multirow{4}{*}{82.5} \\
+			\cline{2-3}
+			&WP&85& \\ \cline{2-3}
+			&SS&80& \\ \cline{2-3}
+			&NT&80& \\
+            \hline
+            \multirow{4}{*}{16}&OK&80&\multirow{4}{*}{77.5} \\
+			\cline{2-3}
+			&WP&80& \\ \cline{2-3}
+			&SS&75& \\ \cline{2-3}
+			&NT&75& \\
+            \hline
+            \multirow{4}{*}{17}&OK&80&\multirow{4}{*}{71.25} \\
+			\cline{2-3}
+			&WP&70& \\ \cline{2-3}
+			&SS&60& \\ \cline{2-3}
+			&NT&75& \\
             \hline 
-            \multirow{4}{*}{9}&\multirow{4}{*}{23}&OK&70&85 \\
-			\cline{3-5}
-			&&WP&80&80 \\ \cline{3-5}
-			&&SS&75&90 \\ \cline{3-5}
-			&&NT&70&85 \\
+    \end{tabular}
+\caption{Experiment result III}
+\label{table:result3}
+\end{table}
+      \begin{table}[ht]
+\centering
+\begin{tabular}{| c | c | c | c |}      
             \hline 
+            \textbf{Frequency(Hz)}&\textbf{Subject}&\textbf{Accuracy(\%)}&\textbf{Averaged accuracy(\%)}\\
+            \hline
+            \multirow{4}{*}{18}&OK&70&\multirow{4}{*}{68.75} \\
+			\cline{2-3}
+			&WP&65& \\ \cline{2-3}
+			&SS&65& \\ \cline{2-3}
+			&NT&75& \\
+            \hline
+            \multirow{4}{*}{19}&OK&60&\multirow{4}{*}{57.5} \\
+			\cline{2-3}
+			&WP&60& \\ \cline{2-3}
+			&SS&55& \\ \cline{2-3}
+			&NT&55& \\
+            \hline
+            \multirow{4}{*}{20}&OK&50&\multirow{4}{*}{38.75} \\
+			\cline{2-3}
+			&WP&35& \\ \cline{2-3}
+			&SS&40& \\ \cline{2-3}
+			&NT&30& \\
+            \hline
+            \multirow{4}{*}{21}&OK&45&\multirow{4}{*}{33.75} \\
+			\cline{2-3}
+			&WP&20& \\ \cline{2-3}
+			&SS&30& \\ \cline{2-3}
+			&NT&40& \\
+            \hline
+            \multirow{4}{*}{22}&OK&30&\multirow{4}{*}{22.5} \\
+			\cline{2-3}
+			&WP&25& \\ \cline{2-3}
+			&SS&20& \\ \cline{2-3}
+			&NT&15& \\
+            \hline
+            \multirow{4}{*}{23}&OK&30&\multirow{4}{*}{31.25} \\
+			\cline{2-3}
+			&WP&40& \\ \cline{2-3}
+			&SS&35& \\ \cline{2-3}
+			&NT&20& \\
+            \hline
+            \multirow{4}{*}{24}&OK&10&\multirow{4}{*}{11.25} \\
+			\cline{2-3}
+			&WP&15& \\ \cline{2-3}
+			&SS&5& \\ \cline{2-3}
+			&NT&15& \\
+            \hline
+            \multirow{4}{*}{25}&OK&10&\multirow{4}{*}{8.75} \\
+			\cline{2-3}
+			&WP&15& \\ \cline{2-3}
+			&SS&5& \\ \cline{2-3}
+			&NT&5& \\
+            \hline
+            \multirow{4}{*}{26}&OK&0&\multirow{4}{*}{0} \\
+			\cline{2-3}
+			&WP&0& \\ \cline{2-3}
+			&SS&0& \\ \cline{2-3}
+			&NT&0& \\
+            \hline
+            \multirow{4}{*}{27}&OK&5&\multirow{4}{*}{6.25} \\
+			\cline{2-3}
+			&WP&10& \\ \cline{2-3}
+			&SS&5& \\ \cline{2-3}
+			&NT&5& \\
+            \hline
+            \multirow{4}{*}{28}&OK&0&\multirow{4}{*}{2.5} \\
+			\cline{2-3}
+			&WP&0& \\ \cline{2-3}
+			&SS&5& \\ \cline{2-3}
+			&NT&5& \\
+            \hline
+            \multirow{4}{*}{29}&OK&5&\multirow{4}{*}{5} \\
+			\cline{2-3}
+			&WP&5& \\ \cline{2-3}
+			&SS&5& \\ \cline{2-3}
+			&NT&5& \\
+            \hline
 		\end{tabular}       
-\caption{Experiment result II}
-\label{table:result2}
+\caption{Experiment result III}
+\label{table:result3}
 \end{table}
 
 The result of this experiment is shown in Table \ref{table:result2} with same set of parameter for each stimulus, sample length, epoch time, duty cycle, intensity and frequency. First from the Table \ref{table:result2}, we compare between regular and uniform random. We can see the accuracy of "WP" in uniform random is better than regular of "WP" in the same row. The accuracy between regular and uniform random of "NT" in the last row of the table, regular is lower accuracy than uniform random. We found any subject have better accuracy in uniform random than regular of flickering type. We found another thing that is the trials of the experiment. The comparison of accuracy between "WP" in second row and "WP" in tenth row is the accuracy of "WP" in the tenth row is better than in the second row. The main factor is trial that we use in each experiment. We found that when we use more trials, the accuracy is increased same as experiment I.

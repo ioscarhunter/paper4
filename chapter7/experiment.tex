@@ -109,7 +109,7 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 			\hline 
             Stimulus & static & Modular   \\
 			\hline 
-            Flickering type & \multicolumn{2}{c}{Regualr} \vline\\
+            Flickering type & \multicolumn{2}{c}{Static} \vline\\
 			\hline 
 			Sample Length & \multicolumn{2}{c}{64samples/epoch} \vline\\
 			\hline 
@@ -120,12 +120,12 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 \label{table:stimulus}
 \end{table}
 
-In this experiment, we set the duty-cycle to be 0.7 and light intensity to be 50\%. The experimental paradigm is shown in Table 7.2, we set the flickering type, sample length, epoch time, duty cycle, intensity and frequency to be the same. There is some difference in stimulus. We have 2 experiment of stimulus. First is regular, static means a flicker will blink 1 time per LED is shown in Figure 7.6. Modular means a flicker will blink 3 times for each LED as shown in Figure 7.7. We will do this for 3, 5, 7 and 9 trials respectively for each subject to obtain the EEG. We obtain the data around 20 times for each subject and calculate average from data to obtain the accuracy of this experiment.
+In this experiment, we set the duty-cycle to be 0.7 and light intensity to be 50\%. The experimental paradigm is shown in Table 7.2, we set the flickering type, sample length, epoch time, duty cycle, intensity and frequency to be the same. There is some difference in stimulus. We have 2 experiment of stimulus. First is Static, static means a flicker will blink 1 time per LED is shown in Figure 7.6. Modular means a flicker will blink 3 times for each LED as shown in Figure 7.7. We will do this for 3, 5, 7 and 9 trials respectively for each subject to obtain the EEG. We obtain the data around 20 times for each subject and calculate average from data to obtain the accuracy of this experiment.
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale = 0.65]{chapter7/sta_nor.pdf}
-	\caption{Stimulus : Regular}
+	\caption{Stimulus : Static}
 \end{figure}
 
 \begin{figure}[ht]
@@ -183,7 +183,7 @@ From the figure \ref{fig:compare1}, we have a comparison graph of the first expe
             \multirow{2}{*}{\textbf{Subject}} &
             \multicolumn{2}{c|}{\textbf{Accuracy of stimulus}} \\
             \cline{4-5}
-            &&&\multicolumn{1}{c|}{\textbf{Regular}} &\multicolumn{1}{c|}{\textbf{Modular}}  \\
+            &&&\multicolumn{1}{c|}{\textbf{static}} &\multicolumn{1}{c|}{\textbf{Modular}}  \\
 			\hline 
 			\multirow{4}{*}{3}&\multirow{4}{*}{11}&OK&25&40 \\
 			\cline{3-5}
@@ -263,7 +263,7 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 			\hline 
 			\textbf{Parameter} & \textbf{Experiment A}  & \textbf{Experiment B}\\
 			\hline 
-			Flickering type & Regular & Uniform random   \\
+			Flickering type & flickering sequence & Uniform random   \\
 			\hline 
 			Stimulus & \multicolumn{2}{c}{Modular} \vline\\
 			\hline 
@@ -276,15 +276,15 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 \label{table:paradigm2}
 \end{table}
 
-In this experiment, we set it to be the same as experiment I. However, there is a difference in flickering type. In this experiment, we use a regular, and uniform random flickering types. The regular flickering type means that the flicker will blink from LED1 to LED4 respectively. The uniform random flickering type is used to randomly select the flickers to blink. We have 3,5,7 and 9 trials for each subject to obtain the EEG to be the same as experiment I. We will obtain the EEG and calculate the average and accuracy of this experiment.
+In this experiment, we set it to be the same as experiment I. However, there is a difference in flickering type. In this experiment, we use a flickering sequence, and uniform random flickering types. The flickering sequence in flickering type means that the flicker will blink from LED1 to LED4 respectively. The uniform random flickering type is used to randomly select the flickers to blink. We have 3,5,7 and 9 trials for each subject to obtain the EEG to be the same as experiment I. We will obtain the EEG and calculate the average and accuracy of this experiment.
 
 From the result of experiment I, the modular stimulus is better than static stimulus. So, we will use the modular stimulus in this experiment. In this experiment, the flickers will be the same as figure\ref{fig:mod_reg} and figure \ref{fig:mod_uni}.
-In figure \ref{fig:mod_reg} is shown the regular flickering type with the modular stimulus. The flicker will blink from LED1 to LED4 and it will blink 3 times per each LED. In the same way, the figure \ref{fig:mod_uni} is shown the uniform random flickering type with the modular stimulus that means each flicker will blink randomly and blink 3 time for each flicker.
+In figure \ref{fig:mod_reg} is shown the flickering sequence in flickering type with the modular stimulus. The flicker will blink from LED1 to LED4 and it will blink 3 times per each LED. In the same way, the figure \ref{fig:mod_uni} is shown the uniform random flickering type with the modular stimulus that means each flicker will blink randomly and blink 3 time for each flicker.
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale = 0.65]{chapter7/mod_nor.pdf}
-	\caption{Flickering type : Regular}
+	\caption{Flickering type : flickering sequence}
     \label{fig:mod_reg}
 \end{figure}
 
@@ -300,7 +300,7 @@ In figure \ref{fig:mod_reg} is shown the regular flickering type with the modula
 \hspace{1.5cm} In this experiment, we use the method to find the accuracy be the same as the experiment I.
 We obtain the raw EEG data from each subject and calculate the average data from the trials which be set.When we calculated the average of EEG data, we use this average data to find the accuracy of this experiment.
 
-From the figure \ref{fig:comp2}, we have a comparison graph of the first experiment EXP A and the second experiment EXP B. Both are different in flickering types. EXP A's flickering type is regular, whereas EXP B has a uniform random type. This graph display the accuracy of EXP A and EXP B, where the trial = 9. The accuracy of EXP A is equal to 73.75\% and EXP B is equal to 85\%. We can see that EXP B is more accurate than EXP A in any trails that we use.
+From the figure \ref{fig:comp2}, we have a comparison graph of the first experiment EXP A and the second experiment EXP B. Both are different in flickering types. EXP A's flickering type is flickering sequence, whereas EXP B has a uniform random type. This graph display the accuracy of EXP A and EXP B, where the trial = 9. The accuracy of EXP A is equal to 73.75\% and EXP B is equal to 85\%. We can see that EXP B is more accurate than EXP A in any trails that we use.
 
 \begin{figure}[ht]
 	\centering
@@ -319,7 +319,7 @@ From the figure \ref{fig:comp2}, we have a comparison graph of the first experim
             \multirow{2}{*}{\textbf{Subject}} &
             \multicolumn{2}{c|}{\textbf{Accuracy of flickering type}} \\
             \cline{4-5}
-            &&&\multicolumn{1}{c|}{\textbf{Regular}} &\multicolumn{1}{c|}{\textbf{Uniform}}  \\
+            &&&\multicolumn{1}{c|}{\textbf{flickering sequence}} &\multicolumn{1}{c|}{\textbf{Uniform random}}  \\
 			\hline 
 			\multirow{4}{*}{3}&\multirow{4}{*}{11}&OK&40&50 \\
 			\cline{3-5}
@@ -350,7 +350,7 @@ From the figure \ref{fig:comp2}, we have a comparison graph of the first experim
 \label{table:result2}
 \end{table}
 
-The result of this experiment is shown in Table \ref{table:result2} with same set of parameter for each stimulus, sample length, epoch time, duty cycle, intensity and frequency. First from the Table \ref{table:result2}, we compare between regular and uniform random. We can see the accuracy of "WP" in uniform random is better than regular of "WP" in the same row. The accuracy between regular and uniform random of "NT" in the last row of the table, regular is lower accuracy than uniform random. We found any subject have better accuracy in uniform random than regular of flickering type. We found another thing that is the trials of the experiment. The comparison of accuracy between "WP" in second row and "WP" in tenth row is the accuracy of "WP" in the tenth row is better than in the second row. The main factor is trial that we use in each experiment. We found that when we use more trials, the accuracy is increased same as experiment I.
+The result of this experiment is shown in Table \ref{table:result2} with same set of parameter for each stimulus, sample length, epoch time, duty cycle, intensity and frequency. First from the Table \ref{table:result2}, we compare between flickering sequence and uniform random. We can see the accuracy of "WP" in uniform random is better than flickering sequence of "WP" in the same row. The accuracy between flickering sequence and uniform random of "NT" in the last row of the table, flickering sequence is lower accuracy than uniform random. We found any subject have better accuracy in uniform random than flickering sequence of flickering type. We found another thing that is the trials of the experiment. The comparison of accuracy between "WP" in second row and "WP" in tenth row is the accuracy of "WP" in the tenth row is better than in the second row. The main factor is trial that we use in each experiment. We found that when we use more trials, the accuracy is increased same as experiment I.
 
 \newpage
 \section{Experiment III}
@@ -432,27 +432,26 @@ There are 4 parameters. First is frequency, duty cycle, light intensity, and lig
 \label{table:paradigm_3}
 \end{table}
 
-From table \ref{table:paradigm_3}, we set duty cycle = 0.7, light intensity 50\%, and light color = "Green". There are some differences in frequencies. We use frequencies from 6Hz to 29Hz and only 1 flicker in this experiment to obtain the EEG signal. The subjects observe the visual stimulator in for 20 trials each subject. Two channels position that we use in our experiment of visual cortex is $O_1$ and $O_2$. When EEG signal that we obtained is analyzed, we will calculate the accuracy of the experiment.
-
-\newpage
-\subsection{Experiment result III}
-\hspace{1.5cm} We use this experiment to find the best accuracy among these frequencies to detect the fittest flicker to be used to control the program. We obtain the raw EEG data from each subject. In one trial, we use windowing function to separate the raw EEG data into segments. We use 512 samples for windowing function. When we get the windowing data. Then, the data will be analyzed by using the Fourier transform. Once the Fourier transform data is obtained, this data will be subtracted from the baseline. We will obtain other data to classify the flickers.The classification algorithm is peak detection. This algorithm is used to find the peak of the EEG data that is already classified, and will be used to calculate the accuracy of this experiment.
-
-From the figure \ref{fig:avg_exp3}, This is the accuracy data of all subjects which are analyzed by the method mentioned in previous paragraph. The best accuracy is 83\% and belongs to the frequency at 15 Hz. The next accuracy is 81\$ and belongs to the frequency at 14 Hz. 
-
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale = 1]{chapter7/exp4.pdf}
-	\caption{The accuracy of all subjects}
-    \label{fig:avg_exp3}
+	\includegraphics[scale = 0.3]{chapter7/scale.pdf}
+	\caption{Experiment paradigm : duty cycle = 0.5 intensity = 50\% color = Green}
+    \label{fig:para}
 \end{figure}
+
+From table \ref{table:paradigm_3}, we set duty cycle = 0.7, light intensity 50\%, and light color = "Green". There are some differences in frequencies. We use frequencies from 6Hz to 29Hz and only 1 flicker in this experiment to obtain the EEG signal. The subjects observe the visual stimulator in for 20 trials each subject. Two channels position that we use in our experiment of visual cortex is $O_1$ and $O_2$. When EEG signal that we obtained is analyzed, we will calculate the accuracy of the experiment.
+
+\subsection{Experiment result III}
 
 \begin{table}[ht]
 \centering
 \begin{tabular}{| c | c | c | c |}
 
 			\hline 
-            \textbf{Frequency(Hz)}&\textbf{Subject}&\textbf{Accuracy(\%)}&\textbf{Averaged accuracy(\%)}\\
+ 			\textbf{Frequency(Hz)}&
+ 			\textbf{Subject}&
+ 			\textbf{Accuracy(\%)}&
+ 			\textbf{Averaged accuracy(\%)}\\
 			\hline 
 			\multirow{4}{*}{11}&OK&40&\multirow{4}{*}{41.25} \\
 			\cline{2-3}
@@ -496,6 +495,12 @@ From the figure \ref{fig:avg_exp3}, This is the accuracy data of all subjects wh
 			&SS&60& \\ \cline{2-3}
 			&NT&75& \\
             \hline
+            \multirow{4}{*}{18}&OK&70&\multirow{4}{*}{68.75} \\
+			\cline{2-3}
+			&WP&65& \\ \cline{2-3}
+			&SS&65& \\ \cline{2-3}
+			&NT&75& \\
+            \hline
     \end{tabular}
 \caption{Experiment result III}
 \label{table:result3}
@@ -505,14 +510,11 @@ From the figure \ref{fig:avg_exp3}, This is the accuracy data of all subjects wh
 \centering
 \begin{tabular}{| c | c | c | c |}   
 
-            \hline 
-            \textbf{Frequency(Hz)}&\textbf{Subject}&\textbf{Accuracy(\%)}&\textbf{Averaged accuracy(\%)}\\
-            \hline
-            \multirow{4}{*}{18}&OK&70&\multirow{4}{*}{68.75} \\
-			\cline{2-3}
-			&WP&65& \\ \cline{2-3}
-			&SS&65& \\ \cline{2-3}
-			&NT&75& \\
+    \hline
+	\textbf{Frequency(Hz)}&
+	\textbf{Subject}&
+	\textbf{Accuracy(\%)}&
+	\textbf{Averaged accuracy(\%)}\\
             \hline
             \multirow{4}{*}{19}&OK&60&\multirow{4}{*}{57.5} \\
 			\cline{2-3}
@@ -556,6 +558,20 @@ From the figure \ref{fig:avg_exp3}, This is the accuracy data of all subjects wh
 			&SS&5& \\ \cline{2-3}
 			&NT&5& \\
             \hline
+            \end{tabular}       
+\caption{Experiment result III}
+\label{table:result3_2}
+\end{table}
+\begin{table}[ht]
+\centering
+\begin{tabular}{| c | c | c | c |}   
+
+    \hline
+	\textbf{Frequency(Hz)}&
+	\textbf{Subject}&
+	\textbf{Accuracy(\%)}&
+	\textbf{Averaged accuracy(\%)}\\
+            \hline
             \multirow{4}{*}{26}&OK&0&\multirow{4}{*}{0} \\
 			\cline{2-3}
 			&WP&0& \\ \cline{2-3}
@@ -582,10 +598,23 @@ From the figure \ref{fig:avg_exp3}, This is the accuracy data of all subjects wh
             \hline
 		\end{tabular}       
 \caption{Experiment result III}
-\label{table:result3_2}
+\label{table:result3_3}
 \end{table}
 
-From table \ref{table:result3} and table \ref{table:result3_2} shown the accuracy of all subject and average of accuracy of subjects in each frequency. There are 4 subjects in this experiment and each subject has difference accuracy. For example, subject "OK" in frequency 11 Hz has 40\% of accuracy and in frequency 13Hz has 80\%. Subject "WP" in frequency 11Hz has 35 accuracy rate and in frequency 13 Hz subject "WP" has 80\% of accuracy. We found that there are some range of frequency that subjects can respond in EEG signal.In this experiment, it is between frequency 13Hz to 18Hz that the accuracy is good to use.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale = 1]{chapter7/exp4.pdf}
+	\caption{The accuracy of all subjects}
+    \label{fig:avg_exp3}
+\end{figure}
+
+We use this experiment to find the best accuracy among these frequencies to detect the fittest flicker to be used to control the program. We obtain the raw EEG data from each subject. In one trial, we use windowing function to separate the raw EEG data into segments. We use 512 samples for windowing function. When we get the windowing data. Then, the data will be analyzed by using the Fourier transform. Once the Fourier transform data is obtained, this data will be subtracted from the baseline. We will obtain other data to classify the flickers.The classification algorithm is peak detection. This algorithm is used to find the peak of the EEG data that is already classified, and will be used to calculate the accuracy of this experiment.
+
+
+Figure \ref{fig:avg_exp3}, represents the accuracy value of all subjects which are analyzed by the method mentioned in previous paragraph. The best accuracy is 83\% and belongs to the frequency at 15 Hz. The next accuracy is 81\$ and belongs to the frequency at 14 Hz. The third highest accuracy value is 78\% and belongs to the frequency at 16Hz.
+
+\newpage
+From table \ref{table:result3} and \ref{table:result3_2} display the accuracy of all subjects and the average accuracy of all subjects at each frequency. There are 4 subjects in this experiment, where each subject has different accuracy. For example, subject "OK" at 11 Hz is 40\% accurate and at 13Hz, its value doubled to 80\%. The subject "WP" at the frequency rate of 11Hz is 35\% accurate and at 13 Hz is 80\% accurate. We found that there are some frequency ranges that subjects can respond in EEG signal. In this experiment, there are frequencies between 12Hz and 19Hz which is good enough to use.
 
 \newpage
 \section{Experiment IV}
@@ -610,64 +639,62 @@ In this experiment, we use 4 subjects. There are SS,OK,WP and NT that is the nic
 			NT & 21 & Male\\
 			\hline
 		\end{tabular}       
-\caption{Subjects of experiment II}
+\caption{Subjects of experiment IV}
 \label{table:2}
 \end{table}
 
 \item{\textbf{Visual Stimulator}}
-In this experiment, we use 4 visual stimulator[LED 1($Y_1$),LED 2($Y_3$),LED 3($Y_5$),LED 4($Y_7$)]
+In this experiment, we use 8 visual stimulator[LED 1($Y_1$),LED 2($Y_2$),LED 3($Y_3$),LED 4($Y_4$),LED 5($Y_5$),LED 6($Y_6$)]
 \item{\textbf{Stimulus}}
-For one trial, we use 11, 15, 19, 23 seconds respectively.
+In this experiment, we separate the stimulus in 2 categories per one trial.
+First, we obtain the EEG data of the subject to be baseline 6 seconds.
+In active state, we obtain the EEG of the subject in 14 seconds.
 \item{\textbf{Trials}}
-We recorded 3, 5, 7, 9 times for each set of parameter.
+We use only 1 trial to analyze the flicker.
 \item{\textbf{Environment}}
 In this experiment, we control the light illuminate value at 37 Lux.
-	\item{\textbf{Parameters}}\\
-There are 4 parameters. First is flickering type, stimulus, sample length and epoch time.
+\item{\textbf{Parameters}}\\
+here are 4 parameters. First is frequency, duty cycle, light intensity, and light color.
 \end{itemize}
 
 
 \begin{table}[ht]
 \centering
-\begin{tabular}{| P{.3\linewidth} | P{.3\linewidth} | P{.3\linewidth} |}
-			
-			\hline 
-			\textbf{Parameter} & \textbf{Experiment A}  & \textbf{Experiment B}\\
-			\hline 
-			Flickering type & Regular & Uniform random   \\
-			\hline 
-			Stimulus & \multicolumn{2}{c}{Modular} \vline\\
-			\hline 
-			Sample Length & \multicolumn{2}{c}{64samples/epoch} \vline\\
-			\hline 
-			Epoch time & \multicolumn{2}{c}{500 ms} \vline\\
-			\hline
-		\end{tabular}       
-\caption{Experimental paradigm II}
-\label{table:paradigm2}
+\begin{tabular}{| c | c | c | c |}
+	\hline 
+    \textbf{Frequency(Hz)}&\textbf{Duty}&\textbf{Intensity(\%)}&\textbf{color}\\
+    \hline
+    13&\multirow{6}{*}{\textbf{0.7}}&
+    \multirow{6}{*}{50}&
+    \multirow{6}{*}{Green}\\
+    \cline{1-1}
+    14&&&\\ \cline{1-1}
+    15&&&\\ \cline{1-1}
+    16&&&\\ \cline{1-1}
+    17&&&\\ \cline{1-1}
+    18&&&\\ \cline{1-1}
+    \hline
+	\end{tabular}       
+\caption{Experiment paradigm IV}
+\label{table:paradigm_4}
 \end{table}
+From table \ref{table:paradigm_4}, we set this experiment to be the same as experiment III. However, we select only the frequency range between 12Hz and 19Hz, because they have high frequency rates. We also conduct only 1 trial to analyze the flicker which the subject fixated and set other parameters to be the same as experiment III.
 
-In this experiment, we set it to be the same as experiment I. However, there is a difference in flickering type. In this experiment, we use a regular, and uniform random flickering types. The regular flickering type means that the flicker will blink from LED1 to LED4 respectively. The uniform random flickering type is used to randomly select the flickers to blink. We have 3,5,7 and 9 trials for each subject to obtain the EEG to be the same as experiment I. We will obtain the EEG and calculate the average and accuracy of this experiment.
+At first, we plan to use 8 flickers in this experiment, However, from the experiment III, there are 6 frequencies that are proper to use. Therefore,  we change the flickers from 8 to 6. 
 
-From the result of experiment I, the modular stimulus is better than static stimulus. So, we will use the modular stimulus in this experiment. In this experiment, the flickers will be the same as figure\ref{fig:mod_reg} and figure \ref{fig:mod_uni}.
-In figure \ref{fig:mod_reg} is shown the regular flickering type with the modular stimulus. The flicker will blink from LED1 to LED4 and it will blink 3 times per each LED. In the same way, the figure \ref{fig:mod_uni} is shown the uniform random flickering type with the modular stimulus that means each flicker will blink randomly and blink 3 time for each flicker.
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale = 0.65]{chapter7/mod_nor.pdf}
-	\caption{Flickering type : Regular}
-    \label{fig:mod_reg}
-\end{figure}
+From the experiment III results, we can calcualte the accuracy of each frequency from the method used in experiment III. The method in this experiment is the same as the experiment III, but we only need to conduct just 1 trial and analyse which flicker is fixated, compared to 20 trials for experiment III. We obtain the EEG signal from two channels of visual cortex. They are $O_1$ and $O_2$. When the analysation has finished detecting the flicker, it will control the function commands in the program. 
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale = 0.65]{chapter7/mod_uni.pdf}
-	\caption{Flickering type : Uniform random}
-    \label{fig:mod_uni}
+	\includegraphics[scale = 0.3]{chapter7/scale.pdf}
+	\caption{Experiment paradigm : duty cycle = 0.5 intensity = 50\% color = Green}
+    \label{fig:para}
 \end{figure}
+
 
 \newpage
-\subsection{Experiment result II}
+\subsection{Experiment result IV}
 \hspace{1.5cm} In this experiment, we use the method to find the accuracy be the same as the experiment I.
 We obtain the raw EEG data from each subject and calculate the average data from the trials which be set.When we calculated the average of EEG data, we use this average data to find the accuracy of this experiment.
 

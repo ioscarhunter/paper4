@@ -173,7 +173,7 @@ Where : $\sigma$ is a sample standard deviation, $\bar{x}$ is mean of the sample
 
 \section{Fourier transform}
 \hspace{1.5cm} The Fourier transform is the mathematical model which uses to transform signal in the time domain into the frequency domain. Every signal can be broken down into a combination of a trigonometric function.  the amplitude of each the frequency are note down in the frequency spectrum.\par
-From the figure\ref{fig:fourier}, the first graph is the signal in the time domain that is a periodic square wave. the second graph is a square wave are decomposed to sin and cosine function. the last graph is amplitudes of the second graph, which is a frequency spectrum \\
+From the figure~\ref{fig:fourier}, the first graph is the signal in the time domain that is a periodic square wave. the second graph is a square wave are decomposed to sin and cosine function. the last graph is amplitudes of the second graph, which is a frequency spectrum \\
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale = 0.75]{chapter3/ft.pdf}
@@ -181,14 +181,32 @@ From the figure\ref{fig:fourier}, the first graph is the signal in the time doma
     \label{fig:fourier}
 \end{figure}
 
+\subsection{Windows function}
+\hspace{1.5cm} Windows function is the mathematical function that use to improve artifacts of the Fourier transform by dividing the large time signal into a small subset of the total signal before applying the FFT.\\
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale = 0.75]{chapter3/window.pdf}
+	\caption{shows an example of a Hanning window applied to EEG data\cite{ft}}
+    \label{fig:window}
+\end{figure}
+
+
+\section{Smoothing filter}
+\hspace{1.5cm}Smoothing filter is the method that uses to eliminate random the noise in the signal or reduce a warping in the signal or use to see the trend line of the signal. the simplest smoothing filter is the moving average, it is easy to understand and use. It operate by averaging number in a range of point from the input signal. to produce each point of the output signal. \\
+\begin{equation}\label{eq:win}
+	 y[i] = \frac{1}{M}\sum\limits ^{M-1}_{j=1} x[i+j]
+\end{equation}
+
+Where : $x[~]$ is the input signal, $y[~]$ is the output signal,
+	   $M$ is the number of point in the average.
+
 \section{Baseline removal}
 \hspace{1.5cm} Baseline removal is the peak analysis technique that used to improve the signal by removing the baseline from the data either by including a baseline function when fitting a sum of functions to the data or by actually subtracting a baseline estimate from the data.Baseline was established by recording the EEG data while the user was not being presented with any stimulus. \\
 
-\section{Windows function}
-\hspace{1.5cm} Windows function is the mathematical function that use to improve artifacts of the Fourier transform by dividing the large time signal into a small subset of the total signal.\\
 
-\section{Smoothing filter}
-\hspace{1.5cm}Smoothing filter is the method that uses to eliminate the noise in the signal or reduce a warping in the signal. \\
+
+
 
 \newpage
 \section{Material background}

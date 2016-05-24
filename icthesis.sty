@@ -53,15 +53,16 @@ KING MONGKUT’S INSTITUTE OF TECHNOLOGY LADKRABANG}\\
   \cleardoublepage
 }
 
-\def\approve{
+
+\newenvironment{approve}{
+	\cleardoublepage
 	\begin{center}{
-			\large\bf Approve}
+			\large \bf Approve}
 	\end{center}
 	\small
-	%\def\baselinestretch{1.5}
 	\linespread{1.5}
 	\normalsize
-}
+}{\cleardoublepage}
 \def\endapprove{
 	\par
 }

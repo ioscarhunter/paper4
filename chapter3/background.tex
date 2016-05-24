@@ -174,7 +174,12 @@ Where : $\sigma$ is a sample standard deviation, $\bar{x}$ is mean of the sample
 \section{Fourier transform}
 \hspace{1.5cm} The Fourier transform is the mathematical model which uses to transform signal in the time domain into the frequency domain. Every signal can be broken down into a combination of a trigonometric function.  the amplitude of each the frequency are note down in the frequency spectrum.\par
 From the figure~\ref{fig:fourier}, the first graph is the signal in the time domain that is a periodic square wave. The second graph is a square wave are decomposed to sin and cosine function. the last graph is amplitudes of the second graph, which is a frequency spectrum \\
-
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale = 0.75]{chapter3/ft.pdf}
+	\caption{Fourier transform concept\cite{ft}}
+	\label{fig:fourier}
+\end{figure}
 \subsection{Continuous Fourier transform}
 The Fourier transform for continuous signal. 
 \begin{equation}\label{eq:ft}
@@ -189,12 +194,7 @@ The Fourier transform for discrete signal.
 \end{equation}
 Where $k$ is discrete variable and $N$ is sampled data point $x_j($where $j=1,2,3,...,N$)
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale = 0.75]{chapter3/ft.pdf}
-	\caption{Fourier transform concept\cite{ft}}
-    \label{fig:fourier}
-\end{figure}
+
 
 \subsection{Fast Fourier transform}
 \hspace{1.5cm} Fast Fourier transform (FFT) is a algorithm to perform Fourier transform, Which reduce complexity of Discrete Fourier transform from $O(n^2)$ to $O(n \log n)$ where $n$ is data size.

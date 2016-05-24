@@ -103,7 +103,8 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \begin{table}[ht]
 \centering
-\begin{tabular}{| P{.3\linewidth} | P{.3\linewidth} | P{.3\linewidth} |}
+\tabulinesep=1.5mm
+\begin{tabu}{| P{.3\linewidth} | P{.3\linewidth} | P{.3\linewidth} |}
 			
 			\hline 
 			\textbf{Parameter} & \textbf{Experiment A}  & \textbf{Experiment B}\\
@@ -116,7 +117,7 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 			\hline 
 			Epoch time & \multicolumn{2}{c}{500 ms} \vline\\
 			\hline
-		\end{tabular}       
+		\end{tabu}       
 \caption{Experimental paradigm I}
 \label{table:stimulus}
 \end{table}

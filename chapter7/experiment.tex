@@ -454,9 +454,20 @@ From the figure\ref{fig:method}, we use this method in our experiment. We have 2
     \label{fig:method}
 \end{figure}
 
+\newpage
 \subsection{Experiment result III}
 
-\begin{table}[ht]
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale = 1]{chapter7/exp4.pdf}
+	\caption{The accuracy of all subjects}
+    \label{fig:avg_exp3}
+\end{figure}
+
+We use this experiment to find the best accuracy among these frequencies to detect the fittest flicker to be used to control the program. We obtain the raw EEG data from each subject. In one trial, we use windowing function to separate the raw EEG data into segments. We use 512 samples for windowing function. When we get the windowing data. Then, the data will be analyzed by using the Fourier transform. Once the Fourier transform data is obtained, this data will be subtracted from the baseline. We will obtain other data to classify the flickers.The classification algorithm is peak detection. This algorithm is used to find the peak of the EEG data that is already classified, and will be used to calculate the accuracy of this experiment.
+
+Figure \ref{fig:avg_exp3}, represents the accuracy value of all subjects which are analyzed by the method mentioned in previous paragraph. The best accuracy is 83\% and belongs to the frequency at 15 Hz. The next accuracy is 81\$ and belongs to the frequency at 14 Hz. The third highest accuracy value is 78\% and belongs to the frequency at 16Hz.
+\begin{table}[H]
 \centering
 \tabulinesep=1.7mm
 \begin{tabu}{| c | c | c | c |}
@@ -509,18 +520,12 @@ From the figure\ref{fig:method}, we use this method in our experiment. We have 2
 			&SS&60& \\ \cline{2-3}
 			&NT&75& \\
             \hline
-            \multirow{4}{*}{18}&OK&70&\multirow{4}{*}{68.75} \\
-			\cline{2-3}
-			&WP&65& \\ \cline{2-3}
-			&SS&65& \\ \cline{2-3}
-			&NT&75& \\
-            \hline
     \end{tabu}
 \caption{Experiment result III}
 \label{table:result3}
 \end{table}
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \tabulinesep=1.7mm
 \begin{tabu}{| c | c | c | c |}   
@@ -530,6 +535,12 @@ From the figure\ref{fig:method}, we use this method in our experiment. We have 2
 	\textbf{Subject}&
 	\textbf{Accuracy(\%)}&
 	\textbf{Averaged accuracy(\%)}\\
+            \hline
+             \multirow{4}{*}{18}&OK&70&\multirow{4}{*}{68.75} \\
+			\cline{2-3}
+			&WP&65& \\ \cline{2-3}
+			&SS&65& \\ \cline{2-3}
+			&NT&75& \\
             \hline
             \multirow{4}{*}{19}&OK&60&\multirow{4}{*}{57.5} \\
 			\cline{2-3}
@@ -567,18 +578,12 @@ From the figure\ref{fig:method}, we use this method in our experiment. We have 2
 			&SS&5& \\ \cline{2-3}
 			&NT&15& \\
             \hline
-            \multirow{4}{*}{25}&OK&10&\multirow{4}{*}{8.75} \\
-			\cline{2-3}
-			&WP&15& \\ \cline{2-3}
-			&SS&5& \\ \cline{2-3}
-			&NT&5& \\
-            \hline
             \end{tabu}       
 \caption{Experiment result III}
 \label{table:result3_2}
 \end{table}
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \tabulinesep=1.7mm
 \begin{tabu}{| c | c | c | c |}   
@@ -588,6 +593,12 @@ From the figure\ref{fig:method}, we use this method in our experiment. We have 2
 	\textbf{Subject}&
 	\textbf{Accuracy(\%)}&
 	\textbf{Averaged accuracy(\%)}\\
+            \hline
+             \multirow{4}{*}{25}&OK&10&\multirow{4}{*}{8.75} \\
+			\cline{2-3}
+			&WP&15& \\ \cline{2-3}
+			&SS&5& \\ \cline{2-3}
+			&NT&5& \\
             \hline
             \multirow{4}{*}{26}&OK&0&\multirow{4}{*}{0} \\
 			\cline{2-3}
@@ -613,24 +624,11 @@ From the figure\ref{fig:method}, we use this method in our experiment. We have 2
 			&SS&5& \\ \cline{2-3}
 			&NT&5& \\
             \hline
-		\end{tabu}       
+		\end{tabu}      
 \caption{Experiment result III}
 \label{table:result3_3}
 \end{table}
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale = 1]{chapter7/exp4.pdf}
-	\caption{The accuracy of all subjects}
-    \label{fig:avg_exp3}
-\end{figure}
-
-We use this experiment to find the best accuracy among these frequencies to detect the fittest flicker to be used to control the program. We obtain the raw EEG data from each subject. In one trial, we use windowing function to separate the raw EEG data into segments. We use 512 samples for windowing function. When we get the windowing data. Then, the data will be analyzed by using the Fourier transform. Once the Fourier transform data is obtained, this data will be subtracted from the baseline. We will obtain other data to classify the flickers.The classification algorithm is peak detection. This algorithm is used to find the peak of the EEG data that is already classified, and will be used to calculate the accuracy of this experiment.
-
-
-Figure \ref{fig:avg_exp3}, represents the accuracy value of all subjects which are analyzed by the method mentioned in previous paragraph. The best accuracy is 83\% and belongs to the frequency at 15 Hz. The next accuracy is 81\$ and belongs to the frequency at 14 Hz. The third highest accuracy value is 78\% and belongs to the frequency at 16Hz.
-
-\newpage
 From table \ref{table:result3} and \ref{table:result3_2} display the accuracy of all subjects and the average accuracy of all subjects at each frequency. There are 4 subjects in this experiment, where each subject has different accuracy. For example, subject "OK" at 11 Hz is 40\% accurate and at 13Hz, its value doubled to 80\%. The subject "WP" at the frequency rate of 11Hz is 35\% accurate and at 13 Hz is 80\% accurate. We found that there are some frequency ranges that subjects can respond in EEG signal. In this experiment, there are frequencies between 12Hz and 19Hz which is good enough to use.
 
 \newpage

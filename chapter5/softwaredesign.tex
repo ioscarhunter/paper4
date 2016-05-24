@@ -53,12 +53,6 @@ In SSVEP method, we use visual stimulator with eight targets. Because it takes l
 
 \newpage
 \section{Class Diagram}
-\
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=\textwidth]{chapter5/Class.pdf}
-	\caption{Visual Stimulator}
-\end{figure}
 
 Class diagram description, starting with the most importance class, EventController, it is connecting Emotiv headset to system, PageSwitcher, and Serial communication classes together to make a program work in unison,
 
@@ -67,3 +61,8 @@ EmoEngin is a library use for connecting our program to an Emotiv headset. Emoti
 After obtaining the result from classification, the EventController will tell the page switcher to change page. EquipmentUI, MusicUI, MovieUI, NewfeedUI, all the user interface pages inherit from UI interface for PageSwitcher can easily control, also easily add new UI page.
 
 The SerialCommunication Class is a class that connects to Arduino via Serial port. It will encode a control command to Arduino to control the LEDs , which Arduino part also have a SerialCommunication class to decode the command that receives via a serial port. Then it will send the command to LEDController to control the LEDs via Arduino's pin. LED class represents for an LEDs. It can control to turn on or off , change color, and frequency.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\textwidth]{chapter5/Class.pdf}
+	\caption{Visual Stimulator}
+\end{figure}

@@ -113,7 +113,8 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
  & Modular Flickering Sequence (MFS)
    \\
 			\hline 
-            Flickering type & \multicolumn{2}{c}{Static} \vline\\
+            Flickering type & \multicolumn{2}{c}{ Flickering Sequence (FS)
+} \vline\\
 			\hline 
 			Sample Length & \multicolumn{2}{c}{64 samples/epoch} \vline\\
 			\hline 
@@ -124,19 +125,20 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 \label{table:stimulus}
 \end{table}
 
-In this experiment, we set the duty cycle to be 0.7 and light intensity to be 50\%. The experimental paradigm is shown in table \ref{table:stimulus}, we set the flickering type, sample length, epoch time, duty cycle, intensity and frequency to be the same. There is some difference in stimulus. We have 2 experiment of stimulus. First is Static, static means a flicker will blink 1 time per LED is shown in figure \ref{fig:sta}. Modular means a flicker will blink 3 times for each LED as shown in figure \ref{fig:mod}. We will do this for 3, 5, 7 and 9 trials respectively for each subject to obtain the EEG. We obtain the data around 20 times for each subject and calculate average from data to obtain the accuracy of this experiment.
+In this experiment, we set the duty cycle to be 0.7 and light intensity to be 50\%. The experimental paradigm is shown in table \ref{table:stimulus}, we set the flickering type, sample length, epoch time, duty cycle, intensity and frequency to be the same. There is some difference in stimulus. We have 2 experiment of stimulus. First is Normal Flickering Sequence (NFS)
+, NFS means a flicker will blink 1 time per LED is shown in figure \ref{fig:sta}. Modular Flickering Sequence (MFS) means a flicker will blink 3 times for each LED as shown in figure \ref{fig:mod}. We will do this for 3, 5, 7 and 9 trials respectively for each subject to obtain the EEG. We obtain the data around 20 times for each subject and calculate average from data to obtain the accuracy of this experiment.
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale = 0.65]{chapter7/sta_nor.pdf}
-	\caption{Stimulus : Static}
+	\caption{Normal Flickering Sequence (NFS)}
 	\label{fig:sta}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale = 0.65]{chapter7/mod_nor.pdf}
-	\caption{Stimulus : Modular}
+	\caption{Modular Flickering Sequence (MFS)}
 	\label{fig:mod}
 \end{figure}
 
@@ -176,7 +178,7 @@ From the figure \ref{fig:avg}, we obtain the average of EEG data from subject "O
 	\label{fig:compare1}
 \end{figure}
 
-From the figure \ref{fig:compare1}, we have a comparison graph of the first experiment A and the second experiment B. Both are different in stimulus. EXP A's stimulus is static, whereas EXP B has a modular stimulus. This graph illustrates the accuracy of EXP A and EXP B, where the trial = 7. The accuracy of EXP A is equal to 57.5\% and EXP B is equal to 67.5\%. We can see that EXP B is more accurate than EXP A in any trials that we use.
+From the figure \ref{fig:compare1}, we have a comparison graph of the first experiment A and the second experiment B. Both are different in stimulus. EXP A's stimulus is NFS, whereas EXP B is MFS. This graph illustrates the accuracy of EXP A and EXP B, where the trial = 7. The accuracy of EXP A is equal to 57.5\% and EXP B is equal to 67.5\%. We can see that EXP B is more accurate than EXP A in any trials that we use.
 
 
 \begin{table}[ht]
@@ -221,7 +223,7 @@ From the figure \ref{fig:compare1}, we have a comparison graph of the first expe
 \label{table:result1}
 \end{table}
 
-The result of this experiment is shown in Table \ref{table:result1} with the same set of parameter for each stimulus, sample length, epoch time, duty cycle, intensity, and frequency. From the Table \ref{table:stimulus},the first row, we can see the accuracy of "SS" in modular is better than static in the same row. Another subject "WP" in the fourteenth row, we can see the accuracy of modular is better than static too. We found each subject have better accuracy in the modular than static of stimulus. We found another thing that is the trial of the experiment. We will compare the accuracy between "OK" in the first row and "OK" in fourteenth row. The result is "OK" in the fourteenth row is better than "OK" in the first row. The main factor is the number of trial that we use in each experiment. We found that when we use more trials, the accuracy is increased too.
+The result of this experiment is shown in Table \ref{table:result1} with the same set of parameter for each stimulus, sample length, epoch time, duty cycle, intensity, and frequency. From the Table \ref{table:stimulus},the first row, we can see the accuracy of "SS" in MFS is better than NFS in the same row. Another subject "WP" in the fourteenth row, we can see the accuracy of MFS is better than NFS too. We found each subject have better accuracy in the MFS than NFS. We found another thing that is the trial of the experiment. We will compare the accuracy between "OK" in the first row and "OK" in fourteenth row. The result is "OK" in the fourteenth row is better than "OK" in the first row. The main factor is the number of trial that we use in each experiment. We found that when we use more trials, the accuracy is increased too.
 
 \newpage
 \section{Experiment II}
@@ -272,8 +274,9 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 			\hline 
 			\textbf{Parameter} & \textbf{Experiment A}  & \textbf{Experiment B}\\
 			\hline 
-			Flickering type & flickering sequence & Uniform random   \\
-			\hline 
+			Flickering type & Modular Flickering Sequence (MFS)
+ & Modular Uniform Random based Sequence (MURS)\\		
+ 			\hline 
 			Stimulus & \multicolumn{2}{c}{Modular} \vline\\
 			\hline 
 			Sample Length & \multicolumn{2}{c}{64 samples/epoch} \vline\\
@@ -285,22 +288,22 @@ There are 4 parameters. First is flickering type, stimulus, sample length and ep
 \label{table:paradigm2}
 \end{table}
 
-In this experiment, we set it to be the same as experiment I. However, there is a difference in flickering type. In this experiment, we use a flickering sequence, and uniform random flickering types. The flickering sequence in flickering type means that the flicker will blink from LED1 to LED4 respectively. The uniform random flickering type is used to randomly select the flickers to blink. We have 3,5,7 and 9 trials for each subject to obtain the EEG to be the same as experiment I. We will obtain the EEG and calculate the average and accuracy of this experiment.
+In this experiment, we set it to be the same as experiment I. However, there is a difference in flickering type. In this experiment, we use a Modular Flickering Sequence (MFS) and Modular Uniform Random based Sequence (MURS) The MFS means that the flicker will blink from LED1 to LED4 respectively. The MURS is used to randomly select the flickers to blink. We have 3,5,7 and 9 trials for each subject to obtain the EEG to be the same as experiment I. We will obtain the EEG and calculate the average and accuracy of this experiment.
 
 From the result of experiment I, the modular stimulus is better than static stimulus. So, we will use the modular stimulus in this experiment. In this experiment, the flickers will be the same as figure \ref{fig:mod_reg} and figure \ref{fig:mod_uni}.
-In figure \ref{fig:mod_reg} is shown the flickering sequence in flickering type with the modular stimulus. The flicker will blink from LED1 to LED4 and it will blink 3 times per each LED. In the same way, the figure \ref{fig:mod_uni} is shown the uniform random flickering type with the modular stimulus that means each flicker will blink randomly and blink 3 time for each flicker.
+In figure \ref{fig:mod_reg} is shown the MFS. The flicker will blink from LED1 to LED4 and it will blink 3 times per each LED. In the same way, the figure \ref{fig:mod_uni} is shown the MURS that means each flicker will blink randomly and blink 3 time for each flicker.
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale = 0.65]{chapter7/mod_nor.pdf}
-	\caption{Flickering type : flickering sequence}
+	\caption{Modular Flickering Sequence (MFS)}
     \label{fig:mod_reg}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale = 0.65]{chapter7/mod_uni.pdf}
-	\caption{Flickering type : Uniform random}
+	\caption{Modular Uniform Random based Sequence (MURS)}
     \label{fig:mod_uni}
 \end{figure}
 
@@ -309,7 +312,7 @@ In figure \ref{fig:mod_reg} is shown the flickering sequence in flickering type 
 \hspace{1.5cm} In this experiment, we use the method to find the accuracy be the same as the experiment I.
 We obtain the raw EEG data from each subject and calculate the average data from the trials which be set.When we calculated the average of EEG data, we use this average data to find the accuracy of this experiment.
 
-From the figure \ref{fig:comp2}, we have a comparison graph of the first experiment EXP A and the second experiment EXP B. Both are different in flickering types. EXP A's flickering type is flickering sequence, whereas EXP B has a uniform random type. This graph display the accuracy of EXP A and EXP B, where the trial = 9. The accuracy of EXP A is equal to 73.75\% and EXP B is equal to 85\%. We can see that EXP B is more accurate than EXP A in any trails that we use.
+From the figure \ref{fig:comp2}, we have a comparison graph of the first experiment EXP A and the second experiment EXP B. Both are different in flickering types. EXP A's flickering type is MFS, whereas EXP B has MURS. This graph display the accuracy of EXP A and EXP B, where the trial = 9. The accuracy of EXP A is equal to 73.75\% and EXP B is equal to 85\%. We can see that EXP B is more accurate than EXP A in any trails that we use.
 
 \begin{figure}[ht]
 	\centering
@@ -360,7 +363,7 @@ From the figure \ref{fig:comp2}, we have a comparison graph of the first experim
 \label{table:result2}
 \end{table}
 
-The result of this experiment is shown in Table \ref{table:result2} with same set of parameter for each stimulus, sample length, epoch time, duty cycle, intensity and frequency. First from the table \ref{table:result2}, we compare between flickering sequence and uniform random. We can see the accuracy of "WP" in uniform random is better than flickering sequence of "WP" in the same row. The accuracy between flickering sequence and uniform random of "NT" in the last row of the table, flickering sequence is lower accuracy than uniform random. We also found any subject have better accuracy in uniform random than flickering sequence of flickering type. We found another thing that is the trials of the experiment. The comparison of accuracy between "WP" in second row and "WP" in tenth row is the accuracy of "WP" in the tenth row is better than in the second row. The main factor is trial that we use in each experiment. We found that when use more trials, the accuracy is increased same as experiment I.
+The result of this experiment is shown in Table \ref{table:result2} with same set of parameter for each stimulus, sample length, epoch time, duty cycle, intensity and frequency. First from the table \ref{table:result2}, we compare between MFS and MURS. We can see the accuracy of "WP" in MURS is better than MFS of "WP" in the same row. The accuracy between MFS and MURS of "NT" in the last row of the table, MFS is lower accuracy than MURS. We also found any subject have better accuracy in MURS than MFS of flickering type. We found another thing that is the trials of the experiment. The comparison of accuracy between "WP" in second row and "WP" in tenth row is the accuracy of "WP" in the tenth row is better than in the second row. The main factor is trial that we use in each experiment. We found that when use more trials, the accuracy is increased same as experiment I.
 
 \newpage
 \section{Experiment III}

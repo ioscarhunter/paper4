@@ -139,3 +139,24 @@
  }
  \end{figure}
 }
+
+\% indented subsection (in toc)
+\textbackslash\{\}titlecontents\{chapter\}
+[0.0cm]             \% left margin
+\{\textbackslash\{\}vspace\{1cm\}\}                  \% above code
+\{\%                  \% numbered format
+\{\{\textbackslash\{\}scshape Chapter\} \textbackslash\{\}thecontentslabel---\}\%
+\}\%
+\{\}         \% unnumbered format
+\{\}         \% filler-page-format, e.g dots
+
+\% indented subsection (in toc)
+\textbackslash\{\}titlecontents*\{subsection\}
+[1.0cm]             \% left margin
+\{\}                  \% above code
+\{\%                  \% numbered format
+\{\textbackslash\{\}thecontentslabel. \}\%
+\}\%
+\{\}         \% unnumbered format
+\{ (\textbackslash\{\}thecontentspage)\}         \% filler-page-format
+[.\~{}]

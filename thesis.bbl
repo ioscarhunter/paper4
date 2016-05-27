@@ -14,11 +14,11 @@ Visual stimuli for the P300 brain–computer interface: A comparison of white/gr
 \textit{Clinical Neurophysiology}, pp.1562-1566, 2009
 
 \bibitem{ft}
-Schwarz, R. (2010). File:Fourier synthesis.svg - Wikimedia Commons. [online] Commons.wikimedia.org. Available at: $https://commons.wikimedia.org/wiki/File:Fourier\_synthesis.svg$ [Accessed 9 May 2016].
+Schwarz, R. (2010). File:Fourier synthesis.svg - Wikimedia Commons. [online] Commons.wikimedia.org. Available at: \texttt{https://commons.wikimedia.org/wiki/File:Fourier\_synthesis.svg} [Accessed 9 May 2016].
 
 
 \bibitem{eegband}
-“5 Types Of Brain Waves Frequencies: Gamma, Beta, Alpha, Theta, Delta,” 5 Types Of Brain Waves Frequencies: Gamma, Beta, Alpha, Theta, Delta. [Online]. Available at: $http://mentalhealthdaily.com/2014/04/15/5-types-of-brain-waves-frequencies-gamma-beta-alpha-theta-delta/.$ [Accessed: 09-May-2016].
+“5 Types Of Brain Waves Frequencies: Gamma, Beta, Alpha, Theta, Delta,” 5 Types Of Brain Waves Frequencies: Gamma, Beta, Alpha, Theta, Delta. [Online]. Available at:\texttt{ http://mentalhealthdaily.com/2014/04/15/5-types-of-brain-waves-frequencies-gamma-beta-alpha-theta-delta/.} [Accessed: 09-May-2016].
 
 \bibitem{base}
 C. Beleites, Fitting Baselines to Spectra, 
@@ -46,8 +46,8 @@ C. S. Herrmann, Human EEG responses to 1–100 Hz flicker: resonance phenomena i
 \bibitem{ref9} 
 D. Vrocher III and M. J. Lowell,
 \textit{“Electroencephalography, EEG: Definition and Facts on Results,”}. 
-eMedicineHealth, 12 Apirl 2014. Available:\newline
-$http://www.emedicinehealth.com/electroencephalography_eeg/article_em.htm.$
+eMedicineHealth, 12 Apirl 2014. Available:\newline\texttt{
+http://www.emedicinehealth.com/electroencephalography_eeg/article_em.htm.
 
 \bibitem{ref10} 
 S. Raschka,
@@ -61,7 +61,7 @@ HELM, The Uniform Distribution, in Workbook Level 1, pp.2, 2004
 \bibitem{ref15}
 M.  Hart,
 \textit{ "The 10-20 system - Marius 't Hart . net"}
-, Mariusthart.net, 2016. [Online]. Available: http://www.mariusthart.net/?e=200. [Accessed: 06- May- 2016].
+, Mariusthart.net, 2016. [Online]. Available: \texttt{http://www.mariusthart.net/?e=200.} [Accessed: 06- May- 2016].
 
 \bibitem{ref13} 
 Worldsemi, 
@@ -70,8 +70,7 @@ Worldsemi, Shenzhen.
 
 \bibitem{ref14} 
 \textit{“Arduino.cc,”}. 
-Arduino. Available:
-$https://www.arduino.cc/en/Main/ArduinoBoardUno.$
+Arduino. Available: \texttt{https://www.arduino.cc/en/Main/ArduinoBoardUno.}
 
 \bibitem{ref12} 
 Emotiv,

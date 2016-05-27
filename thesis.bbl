@@ -14,7 +14,7 @@ Visual stimuli for the P300 brain–computer interface: A comparison of white/gr
 \textit{Clinical Neurophysiology}, pp.1562-1566, 2009
 
 \bibitem{ft}
-Schwarz, R. (2010). File:Fourier synthesis.svg - Wikimedia Commons. [online] Commons.wikimedia.org. Available at: \texttt{https://commons.wikimedia.org/wiki/File:Fourier\_synthesis.svg} [Accessed 9 May 2016].
+Schwarz, R. (2010). File:Fourier synthesis.svg - Wikimedia Commons. [online] Commons.wikimedia.org. Available at: \texttt{https://commons.wikimedia.org/wiki/File:Fourier\_synthesis.svg} [Accessed 9 May 2016].}
 
 
 \bibitem{eegband}
@@ -47,7 +47,7 @@ C. S. Herrmann, Human EEG responses to 1–100 Hz flicker: resonance phenomena i
 D. Vrocher III and M. J. Lowell,
 \textit{“Electroencephalography, EEG: Definition and Facts on Results,”}. 
 eMedicineHealth, 12 Apirl 2014. Available:\newline\texttt{
-http://www.emedicinehealth.com/electroencephalography_eeg/article_em.htm.
+http://www.emedicinehealth.com/electroencephalography_eeg/article_em.htm.}
 
 \bibitem{ref10} 
 S. Raschka,
@@ -70,7 +70,8 @@ Worldsemi, Shenzhen.
 
 \bibitem{ref14} 
 \textit{“Arduino.cc,”}. 
-Arduino. Available: \texttt{https://www.arduino.cc/en/Main/ArduinoBoardUno.}
+Arduino. Available: \texttt{
+https://www.arduino.cc/en/Main/ArduinoBoardUno.}
 
 \bibitem{ref12} 
 Emotiv,
